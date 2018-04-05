@@ -1,0 +1,114 @@
+@font-face
+{
+    font-family: myFirstFont;
+    src: url('../../fonts/迷你简卡通.TTF')
+
+
+}
+
+body{
+
+
+
+    /*background: url("../../images/shouye_bg.png");*/
+    background-attachment:fixed;
+
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+    font-family:myFirstFont;
+
+
+
+}
+
+.header{
+    float: left;
+    padding: 0 17%;
+    margin: auto;
+    background-color:transparent;
+    position: relative;
+    z-index: 999;
+}
+
+
+.header img{
+    float: left;
+    vertical-align: middle;
+}
+
+.header >ul{
+    float: right;
+
+    margin-top: 50px;
+}
+
+.header>ul>li{
+    width: 115px;
+    margin-left:20px;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    float: left;
+    border: 3px solid #fff;
+}
+
+.butE65260{
+    background: #E65260;
+}
+
+.but97C83E{
+    background: #97C83E;
+}
+.butF3C768{
+    background: #F3C768;
+}
+.but35B1D1{
+    background:#35B1D1 ;
+}
+
+.course{
+    position: relative;
+}
+
+.course_list{
+    position: absolute;
+    top:30px;
+    left:-1px;
+    padding-top: 15px;
+}
+
+.course_list ul{
+    width: 115px;
+    text-align: center;
+    border: 2px solid #CEF47F;
+    border-radius: 80px;
+    padding: 35px 0;
+    background:#97C83E;
+}
+.course_list ul >li{
+    font-size: 18px ;
+    margin-bottom: 15px;
+    /*height: 30px;*/
+}
+.course_list ul >li span{
+    display: inline-block;
+    padding-bottom: 5px;
+   border-bottom: 2px solid transparent;
+    /*border-bottom-width: 40px;*/
+}
+
+.course_list .active{
+    border-bottom: 2px solid #fff;
+}
+    /*首页*/
+.home_page{
+    background: url("../../images/shouye_bg.png");
+}
+.digitization_course{
+    background: url("../../images/bg2.png");
+}
+

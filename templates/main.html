@@ -1,0 +1,49 @@
+<div class="w100 header">
+    <img ng-src="images/logo.png" alt=""/>
+    <ul>
+        <li class="butE65260" ui-sref="main.homePage">首页</li>
+        <li class="but97C83E course" ng-mouseenter="enter=true" ng-mouseleave="enter=false">
+            课程中心
+            <div  ng-show="enter" class="course_list">
+                <ul>
+                    <li ui-sref="main.digitization_course" ng-click="num=1">
+                        <span  class="{{num==1?'active':''}}">数字化教程</span>
+                    </li>
+                    <li ui-sref="main.worksheets" ng-click="num=2">
+                        <span class="{{num==2?'active':''}}" >学习单</span>
+
+                    </li>
+                    <li ui-sref="main.wicro_course" ng-click="num=3">
+                        <span class="{{num==3?'active':''}}">微课</span>
+
+                    </li>
+                    <li ui-sref="main.course_resources" ng-click="num=4">
+
+                        <span class="{{num==4?'active':''}}">课程资源</span>
+
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="butF3C768" ui-sref="main.interactive">互动学习</li>
+        <li class="but35B1D1 course" ng-mouseenter="showMenu=true" ng-mouseleave="showMenu=false">
+            课程评价
+            <div ng-show="showMenu" class="course_list">
+                <ul class="evaluation-subMenu">
+                    <li ui-sref="main.self_evaluate" ng-click="num=5">
+                        <span  class="{{num==5?'active':''}}">自评</span>
+                    </li>
+                     <li ui-sref="main.mutual_evaluate" ng-click="num=6">
+                        <span  class="{{num==6?'active':''}}">互评</span>
+                    </li>
+                    <li ui-sref="main.teacher_evaluate" ng-click="num=7">
+                        <span class="{{num==7?'active':''}}" >教师评价</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div ui-view='content' class="contentView h100"></div>
+
+

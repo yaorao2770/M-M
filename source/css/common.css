@@ -1,0 +1,132 @@
+/* reset */
+html,body,p, h1, h2, h3, h4, h5, h6,ul,li,ol,p,textarea,th,td{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  font-family: "Microsoft YaHei UI Light";
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  /*background: #EEF3FA;*/
+}
+body{
+  -webkit-tap-highlight-color:transparent;
+}
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+
+/* common */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.cl{
+	clear: both;
+}
+.hidden{
+  display: none;
+}
+.clearFix::after{
+  content: ' ';
+  height: 0;
+  display: block ;
+  visibility: hidden;
+  clear: both;
+}
+
+.fa:hover{
+  cursor: pointer;
+}
+
+
+.inline-b{
+  display: inline-block;
+}
+.ma-rl5{
+  margin-right: 15px;
+}
+
+input,button,select{outline:none}
+
+/*#content input[type="text"]:focus,*/
+/*#content input[type="password"]:focus,*/
+/*#content input[type="number"]:focus,*/
+/*#content textarea:focus,*/
+/*#content select:focus{border:1px solid #F4A668;}*/
+
+button:hover,.fa:hover{
+  opacity: 0.8;
+}
+button[disabled], html input[disabled]{
+  cursor: not-allowed;
+}
+
+
+.h100{
+  height: 100%;
+}
+
+.w100{
+  width: 100%;
+}
+.bold{
+  font-weight:bolder;
+}
+
+
+input:focus{ outline:none; }
+
+
+
+.colorRed{
+  color: #F22727;
+}
+.hover{
+  cursor: pointer;
+}
+
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span,
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span{
+  border-radius: 50%;
+  background: #896042;
+  color: #fff;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus{
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #F7CB74;
+}
+.pagination-sm > li > a, .pagination-sm > li > span{
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.pagination > li > a, .pagination > li > span{
+  border:none;
+  color: #333;
+  font-weight: bold;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus{
+  background: #fff;
+}

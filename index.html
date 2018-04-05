@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>M&M课程数字平台</title>
+
+	<!-- 清除浏览器缓存 -->
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="bower_components/jquery-confirm2/css/jquery-confirm.css"/>
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="source/css/common.css">
+	<link rel="stylesheet" href="source/css/al.css">
+	<link rel="stylesheet" href="source/css/cy.css">
+	
+</head>
+<body ng-app="myApp">
+	<div ui-view class="h100"></div>
+</body>
+
+	<!-- inject:js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="bower_components/jquery-confirm2/js/jquery-confirm.js"></script>
+	<!-- endinject -->
+
+	<!-- pageSource -->
+	<script src="source/service/app.js"></script>
+	<script src="source/service/router.js"></script>
+	<script src="source/service/myFilter.js"></script>
+	<script src="source/directive/directive.js"></script>
+    <script src="source/service/publicFactory.js"></script>
+	<script src="source/service/commonService.js"></script>
+	<script src="source/directive/angular-bootstrap-checkbox.js"></script>
+
+
+	<!--<script src="http://gosspublic.alicdn.com/aliyun-oss-sdk-4.4.4.min.js"></script>-->
+
+	<!--controller-->
+	<script src="source/controller/mainCtrl.js"></script>
+    <script src="source/controller/homePage.js"></script>
+
+	<script src="source/controller/course_evaluateCtrl.js"></script>
+	<script src="source/controller/interactiveCtrl.js"></script>
+	<script src="source/controller/digitization_courseCtrl.js"></script>
+	<script src="source/controller/wicro_course.js"></script>
+	<script src="source/controller/worksheets.js"></script>
+	<script src="source/controller/course_resources.js"></script>
+
+
+</html>
+
