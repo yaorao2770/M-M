@@ -24,12 +24,19 @@ body{
 }
 
 .header{
-    float: left;
+   /* float: left;
     padding: 0 17%;
     margin: auto;
     background-color:transparent;
     position: relative;
+    z-index: 999;*/
+
+    background-color: transparent;
+    position: relative;
     z-index: 999;
+    width: 1000px;
+    background: red;
+    margin: 0 auto;
 }
 
 

@@ -1,1 +1,27 @@
-<h1>自评</h1>
+<div class="self-evaluate evaluate">
+	<div class="wrapper">
+		<img ng-src="images/evaluate/self-title.png" class="inline-b title">
+		<img ng-src="images/evaluate/back.png" class="inline-b back">
+		<div class="cl"></div>
+		<img ng-src="images/evaluate/split-line-fff.png" class="split-line">
+		<ul class="self-evaluate-lists">
+			<li ng-repeat="item in [1,2,3,4,5]">
+				<img ng-src="images/evaluate/self-cards.png">
+				<span class="list-title">
+					<span>第</span>
+					<span ng-bind="$index+1"></span>
+					<span>题</span>
+				</span>
+				<span class="content">
+					<ul class="cards-text">
+						<li class="first">1. 在参观小仓鼠实验室的测试中，我做对了（）道题。</li>
+						<li>A &nbsp;&nbsp; 4道</li>
+						<li>B &nbsp;&nbsp; 1-3道</li>
+						<li>C &nbsp;&nbsp; 0道</li>
+					</ul>
+				</span>
+			</li>
+			<p class="cl"></p>
+		</ul>
+	</div>
+</div>

@@ -1,1 +1,26 @@
-<h1>教师评价</h1>
+<div class="teacher-evaluate evaluate">
+	<div class="wrapper">
+		<img ng-src="images/evaluate/teacher.png">
+		<span class="title">教师评价</span>
+		<img ng-src="images/evaluate/back.png" class="back">
+		<ul class="lists">
+			<li ng-repeat="item in [1,2,3]" class="list-item">
+				<h2 class='list-title'>第{{$index+1}}课时 &nbsp;&nbsp; 测量仓鼠体重</h2>
+				<p>
+					教师评价： 你的任务完成得很棒！收集到了5种测量的方法，并且给这5中方法进行了优势排序，说明了你信息收集、整理的能力很强！希望你在小组合作中在努力了！
+				</p>
+			</li>
+		</ul>
+		<ul uib-pagination 
+            class="pagination-sm teacher-pagination"
+            total-items="totalItems"
+            items-per-page = "itemsPerPage"
+            num-pages="numPages" 
+            force-ellipses="true" 
+            ng-model="currentPage"
+            ng-change="changePage()"
+            max-size="maxSize" 
+            previous-text="&lsaquo;" 
+            next-text="&rsaquo;"></ul>
+	</div>
+</div>
