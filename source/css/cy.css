@@ -5,6 +5,7 @@
 }
 .evaluate{
     background: url('../../images/bg2.png');
+    /*background-size: 100%;*/
 }
 .self-evaluate .title{
     width: 250px;
@@ -137,6 +138,7 @@
 }
 .mutual-evaluate .avater-wrap img{
     width: 85px;
+    cursor: pointer;
 }
 .mutual-cards{
     margin-top: -40px;
@@ -249,7 +251,7 @@
 /* 互动学习 */
 .interactive{
 	position: relative;
-	width: 80%;
+	width: 1000px;
 	margin:0 auto;
     padding-bottom: 28px;
 }
@@ -279,6 +281,7 @@
     left: 57px;
     top: 285px;
     cursor: pointer;
+    font-size: 22px;
 }
 .intera-nav:nth-of-type(2){
 	left: 250px;
@@ -291,7 +294,6 @@
     position: absolute;
     left: 21px;
     top: 5px;
-    font-size: 22px;
 }
 .intera-nav>.arrow{
     position: absolute;
@@ -333,8 +335,222 @@
 .pagination{
     position: absolute;
     left: 37%;
-    bottom: 56px;
+    bottom: 30px;
 }
 .split-line{
     padding-top: 20px;
+}
+.teacher-evaluate .pagination{
+    bottom: 46px;
+}
+
+
+@media (max-width:1366px){
+    .evaluate{
+        background-size: 100%;
+    }
+    .interactive{
+        width: 900px;
+    }
+    .interactive-wrap{
+        width: 100%;
+        height: 470px;
+        float: left;
+        margin-top: -21px;
+    }
+    .intera-title{
+        font-size: 40px;
+        top: 140px;
+    }
+    .intera-cards-bg{
+        top: 118px;
+        width: 197px;
+    }
+    .intera-cards-bg>span{
+        top: 28px;
+        right: 29px;
+        font-size: 20px;
+    }
+    .intera-nav{
+        top:219px;
+        width: 130px;
+        font-size: 18px;
+    }
+    .intera-question{
+        top: 280px;
+        width: 89%;
+    }
+    .intera-question li{
+        margin-bottom: 15px;
+    }
+    .intera-question .img-wrap{
+        vertical-align: -39px;
+    }
+    .intera-question .text, .intera-question .date{
+        font-size: 18px;
+    }
+    .intera-question .data-icon{
+        top: 0;
+    }
+    .interactive .split-line{
+        padding-top: 11px;
+        height: 12px;
+    }
+    .intera-question .img-wrap img{
+        width: 45px;
+        margin-bottom: 3px;
+    }
+    .intera-nav>.arrow{
+        width: 20px;
+    }
+    .intera-nav:nth-of-type(2){
+        left: 220px;
+    }
+    .intera-nav:nth-of-type(3){
+        left: 380px;
+    }
+    .pagination{
+        bottom: 23px;
+        left: 32%;
+    }
+    .teacher-evaluate .pagination{
+        bottom: 23px;
+    }
+    .self-evaluate>.wrapper{
+        padding-top: 127px;
+        width: 900px;
+        position: relative;
+        padding-bottom: 13px;
+    }
+    .self-evaluate .title{
+        position: absolute;
+        left: 0;
+    }
+    .self-evaluate .split-line{
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: 25px;
+    }
+    .self-evaluate-lists img{
+        width: 270px;
+        height: 192px;
+    }
+    .self-evaluate-lists>li{
+        margin: 0 40px 12px 0;
+    }
+    .self-evaluate-lists .cards-text li{
+        height: 23px;
+        line-height: 25px;
+    }
+    .self-evaluate-lists .cards-text li:nth-of-type(2){
+        margin-top: 34px;
+    }
+    .self-evaluate-lists .cards-text{
+        top: 40px;
+        width: 239px;
+    }
+    .self-evaluate-lists .list-title{
+        font-size: 20px;
+    }
+    .self-evaluate .back{
+        margin-bottom: -10px;
+    }
+    .my-wrapper{
+        width: 900px;
+        padding:127px 0 17px 0;
+    }
+    .mutual-title{
+        width: 210px;
+        position: absolute;
+    }
+    .mutual-evaluate .avater-wrap>span{
+        left: 250px;
+        font-size: 14px;
+    }
+    .mutual-evaluate .avater-wrap img{
+        width: 68px;
+        cursor: pointer;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(2){
+        left: 345px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(3){
+        left: 440px;
+    }
+    .mutual-cards{
+        margin-top: 20px;
+        width: 900px;
+        height: 230px;
+    }
+    .mutual-evaluate .blue-wrap{
+        top: 263px;
+        left: 25px;
+    }
+    .blue-wrap .text{
+        font-size: 18px;
+        top: 5px;
+        left: 45px;
+    }
+    .mutual-evaluate .class-wrap{
+        width: 240px;
+    }
+    .blue-wrap i{
+        font-size: 25px;
+        top: 6px;
+    }
+    .class-container>.right{
+        left: 209px;
+    }
+    .calendar-wrap{
+        width: 165px;
+        height: 36px;
+    }
+    .mutual-evaluate .logs-wrap{
+        top: 310px;
+    }
+    .mutual-evaluate .logs {
+        height: 34px;
+        line-height: 34px;
+    }
+    .mutual-evaluate .zan-log-wrap{
+        padding:15px;
+    }
+    .mutual-evaluate .footer{
+        padding-top: 16px;
+    }
+    .teacher-evaluate .title{
+        font-size: 40px;
+        top: 125px;
+    }
+    .teacher-evaluate .back{
+        top: 125px;
+        width: 180px;
+    }
+    .teacher-wrap{
+        height: 510px;
+        width: 100%;
+        margin-top: -60px;
+        float: left;
+    }
+    .teacher-evaluate .lists{
+        top: 200px;
+        left: 40px;
+    }
+    .teacher-evaluate .list-item{
+        margin-bottom: 12px;
+        padding-bottom: 11px;
+    }
+    .teacher-evaluate .list-title{
+        margin: 13px 0 12px 0;
+        font-size: 24px;
+    }
+    .teacher-evaluate .list-item p{
+        line-height: 25px;
+    }
+    .teacher-evaluate .my-wrapper{
+        padding-bottom: 26px;
+    }
+    .teacher-evaluate .list-item:nth-of-type(2n+2){
+        width: 88%;
+    }
 }
