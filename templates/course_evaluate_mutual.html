@@ -1,13 +1,66 @@
-<dv class="mutual-evaluate">
-	<div class="wrapper">
-		<img ng-src="images/evaluate/mutual-title.png">
-		<span>
+<div class="mutual-evaluate evaluate">
+	<div class="my-wrapper">
+		<img ng-src="images/evaluate/mutual-title.png" class="mutual-title">
+		<span class="avater-wrap">
 			<span ng-repeat="item in [1,2,3]">
-				<img ng-src="{{imgUrl}}" ng-click="clickImg()">
+				<img ng-src="{{imgUrlActive}}" ng-click="clickImg($index)" ng-show="curNum == $index">
+				<img ng-src="{{imgUrl}}" ng-click="clickImg($index)" ng-show="curNum != $index">
 				<span>A组</span><br>
 				<span>黄小朋友</span>
 			</span>
 		</span>
-		<img ng-src="images/evaluate/back.png">
+		<img ng-src="images/evaluate/back.png" class="back">
+		<img ng-src="images/evaluate/mutual-cards.png" class="mutual-cards">
+		<div class="cl"></div>
+		<div class="blue-wrap">
+			<span class="class-container fl">
+				<img ng-src="images/evaluate/class-wrap.png" class="class-wrap">
+				<span class="text">第3课  测量仓鼠体重</span>
+				<i class="fa fa-arrow-circle-o-left left"></i>
+				<i class="fa fa-arrow-circle-o-right right"></i>
+			</span>
+			<span class="fr relative">
+				<img ng-src="images/evaluate/class-wrap.png" class="calendar-wrap">
+				<span class="text">2018-3-12</span>
+				<i class="fa fa-clock-o"></i>
+			</span>
+			<div class="cl"></div>
+		</div>
+		<ul class="logs-wrap">
+			<li ng-repeat="item in [1,2,3]" class="logs">
+				<img ng-src="images/evaluate/dot.png" class="dot">
+				<span class="bold">2018年3月13日&nbsp;&nbsp;&nbsp;&nbsp;今天，我们小组的仓鼠胃口似乎特别好……</span>
+				<span class="fr">
+					<i class="fa fa-thumbs-up thumbs"></i>
+					<span>6</span>
+				</span>
+			</li>
+		</ul>
+		<div class="footer">
+			<span class="relative">
+				<img ng-src="images/evaluate/zan-wrap.png" class="zan">
+				<span class="zan-total">
+					<span>我的</span><br>
+					<span>点赞数</span><br>
+					<i class="fa fa-thumbs-up thumbs thumbs-left"></i>
+					<span>88</span>
+					<i class="fa fa-thumbs-up thumbs thumbs-rotate"></i>
+				</span>
+			</span>
+			<ul class="zan-log-wrap">
+				<li ng-repeat="item in [1,2,3]" class="logs">
+					<img ng-src="images/evaluate/dot.png" class="dot">
+					<span class="bold">
+						黄小朋友
+						<i class="fa fa-thumbs-up thumbs"></i>
+						赞了 &nbsp;&nbsp; 
+						"今天， 我们小组的……"
+					</span>
+					<span class="fr bold">2018-3-13</span>
+				</li>
+				<li class="get-more">查看更多</li>
+			</ul>
+			<div class="cl"></div>
+		</div>
 	</div>
-</dv>
+</div>

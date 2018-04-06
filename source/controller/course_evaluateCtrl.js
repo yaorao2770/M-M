@@ -18,10 +18,13 @@ app.controller('course_evaluateCtrl', ['$scope',function($scope){
 	}
 
 	$scope.imgUrl = 'images/evaluate/avater.png';
-	
+	$scope.imgUrlActive = 'images/evaluate/avater-active.png';
+	$scope.curNum = 0;
+
 	// 点击头像，高亮
-	$scope.clickImg = function(){
-		$scope.imgUrl = 'images/evaluate/avater-active.png';
+	$scope.clickImg = function(i){
+		$scope.curNum = i;
+		// $scope.imgUrlActive = 'images/evaluate/avater-active.png';
 	};
 
 }]);

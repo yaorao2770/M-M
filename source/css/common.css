@@ -83,7 +83,9 @@ button[disabled], html input[disabled]{
 .bold{
   font-weight:bolder;
 }
-
+.relative{
+  position: relative;
+}
 
 input:focus{ outline:none; }
 
