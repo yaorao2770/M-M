@@ -1,4 +1,25 @@
 <div class="h100 digitization_course">
-    <h1>{{data}}</h1>
+   <div class="dig_content">
+        <span class="dis_word">数字化教材</span>
+
+       <div class="dig_head">
+            <ul >
+                <li ng-repeat="item in liList" >
+                    <a ng-bind="item" class="hover" ng-class="{active:isSelect==$index}" ng-click="select_dis($index)"></a>
+                </li>
+            </ul>
+       </div>
+
+       <div class="dis_main">
+            <ul>
+                <li ng-repeat="item in mainList track by $index">
+                    <img ng-src={{item.img}} alt="" class="img-responsive" ui-sref="main.soon_learn"/>
+                    <span>第{{$index}}课</span><br>
+                    <span ng-bind="item.name" class="font-16"></span>
+
+                </li>
+            </ul>
+       </div>
+   </div>
 </div>
 

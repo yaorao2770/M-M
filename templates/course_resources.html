@@ -1,1 +1,55 @@
-<h1>{{data}}</h1>
+<div class="h100 course_resource">
+    <div class="course__content">
+        <div class="course_head">
+            <ul class="menulist_ul">
+                <li ng-repeat="item in menulist"
+                    class="hover"
+                    ng-class="{active:isSelect==$index}"
+                    ng-click="selectCourse($index)">
+                    <a ng-bind="item"></a>
+                </li>
+            </ul>
+
+            <ul class="operate_ul">
+                <li ng-repeat="item in operatelist" class="hover">
+                    <span ng-bind="item"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="course_table">
+            <table>
+                <thead>
+                    <th><i class="circle"></i></th>
+                    <th class="text-left w40">全选</th>
+                    <th class="text-center">大小</th>
+                    <th class="text-right">修改日期</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in courseTable track by $index">
+                        <td><i class="circle"></i></td>
+                        <td ng-bind="item.name" class="text-left"></td>
+                        <td ng-bind="item.size" class="text-center"></td>
+                        <td ng-bind="item.date" class="text-right"></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+            <div class="w100 text-center course_foot">
+                <ul class="paging_ul">
+                    <li>
+                        <i class="fa fa-chevron-left"></i>
+                    </li>
+                    <li ng-repeat="item in numList" ng-click="selectNum($index)">
+                        <span ng-class="{active:isNum==$index}" class="hover">{{item}}</span>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

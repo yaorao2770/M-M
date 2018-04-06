@@ -24,12 +24,12 @@ body{
 }
 
 .header{
-   /* float: left;
+    /*overflow: hidden;*/
+    /*float: left;
+
     padding: 0 17%;
     margin: auto;
-    background-color:transparent;
-    position: relative;
-    z-index: 999;*/
+    background-color:transparent;*/
 
     background-color: transparent;
     position: relative;
@@ -86,6 +86,7 @@ body{
     top:30px;
     left:-1px;
     padding-top: 15px;
+    z-index: 10;
 }
 
 .course_list ul{
@@ -113,9 +114,555 @@ body{
 }
     /*首页*/
 .home_page{
-    background: url("../../images/shouye_bg.png");
+    background: url("../../images/shouye_bg.png")no-repeat;
+    background-size:100%100%;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/shouye_bg.png',sizingMethod='scale');
+
+    padding-top: 160px;
+
+
+    /*position: relative;*/
 }
-.digitization_course{
-    background: url("../../images/bg2.png");
+.page_js{
+    display: flex;
+    align-items: flex-end;
+
+    margin: auto;
+    justify-content: center;
+    padding-top: 30px;
+    padding-right: 150px;
+
+}
+.course_js{
+
+    background: url("../../images/kechengjieshao.png")no-repeat;
+    width: 322px;
+    height: 114px;
+    margin-right: 50px;
+    position: relative;
 }
 
+.course_js a{
+    font-size:25px;
+    color:#623D0E;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 22px;
+
+}
+
+.terrace_js{
+    width: 284px;
+    height: 61px;
+    background: url("../../images/pingtaijieshao.png");
+    position: relative;
+}
+
+.terrace_js a{
+    font-size:25px;
+    color:#623D0E;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 22px;
+
+}
+.js_content{
+    /*position: absolute;*/
+    position: relative;
+    top:18%;
+    width: 42%;
+    margin: auto;
+    line-height:2
+}
+
+.js_content h3{
+    color:#DE7110;
+    margin-bottom: 15px;
+}
+
+
+.course_word{
+    position: absolute;
+    right: 27.5%;
+    top:27.5%
+}
+.terrace_word{
+    position: absolute;
+    right: 27.5%;
+    top:32%
+}
+
+.img_right{
+    position: absolute;
+    right: 28%;
+    top:37%
+}
+.img_left{
+    transform:rotate(240deg);
+    position: absolute;
+    right: 28%;
+    top:41%
+}
+
+.home_page .active{
+    color: #fff;
+}
+.digitization_course,.worksheets, .wicro_course, .course_resource,.soon_learn{
+    background: url("../../images/bg2.png");
+    font-size: 20px;
+    background-size:100%100%;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/shouye_bg.png',sizingMethod='scale');
+}
+
+.dig_content{
+    background: url("../../images/neirongkuang3.png")no-repeat;
+    background-size:100%100%;
+    position: absolute;
+    width: 65%;
+    height: 70%;
+
+    margin: auto;
+    top:15%;
+    left:0;
+    bottom: 0;
+    right: 0;
+    padding: 7% 5% 0 5%;
+    /*padding-top: 7%;*/
+
+}
+
+.dis_word{
+    position: absolute;
+    top:9%;
+    left:15%;
+    color: #fff;
+}
+.dig_head{
+    /*position: absolute;*/
+    /*top:18%;*/
+    /*left: 5%;*/
+    /*width: 80%;*/
+    border-bottom: 3px solid #F2BB74;
+}
+.dig_head >ul{
+   display: flex;
+    padding-left: 1rem;
+}
+
+.dig_head >ul a{
+    color:#DF6A1A;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 3px solid transparent;
+    border-bottom: none;
+}
+.dig_head >ul .active{
+    border: 3px solid #F2BB74;
+    border-top-left-radius: 1em ;
+    border-top-right-radius: 1em ;
+    border-bottom: none;
+}
+.dis_main ul li{
+   float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+}
+.font-16{
+    font-size: 16px;
+}
+
+/*学习单*/
+.work_evaluate{
+    position: absolute;
+    background:url("../../images/zuoyepingjia_bg.png")no-repeat ;
+    background-size:100%100%;
+    top:7%;
+    left:30%;
+    display: inline-block;
+    width: 214px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+
+}
+.work_menu{
+    border:3px solid #fff;
+    background: #94C643;
+    color: #fff;
+    position: absolute;
+    padding: 5px 30px;
+    border-radius: 20px;
+    right: 7%;
+    top:-5%
+
+}
+
+.icon-left{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 12px solid transparent;
+    border-right: 18px solid #fff;
+    border-bottom: 12px solid transparent;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon-right{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 12px solid transparent;
+    border-left: 18px solid #fff;
+    border-bottom: 12px solid transparent;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.colorCom{
+    color: #DF6A1A;
+}
+.work_main{
+    height: 80%;
+}
+.ma-tl5{
+    margin-top: 15px;
+}
+.work_main_con{
+    width:94%;
+    height: 48%;
+    background: url("../../images/neirong_bg.png")no-repeat ;
+    background-size:100%100%;
+    margin-bottom: 3%;
+    padding-top: 10px;
+}
+
+.work_main_ul{
+    overflow: hidden;
+    padding: 10px 10%;
+}
+.work_main_ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.work_main_word{
+    display: flex;
+    justify-content: center;
+}
+.work_main_word li{
+    padding: 0 15px;
+}
+
+.work_main_right{
+    position: absolute;
+    right: 5%;
+    top:35% ;
+}
+
+.work_main_right li,.learn_con_right li{
+    width: 38px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.work_main_right li:hover{
+    cursor: pointer;
+}
+.backEEA151{
+    background: #EEA151;
+}
+
+.backA6E24E{
+    background:#A6E24E;
+}
+
+/*微课*/
+.play_img{
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wicro_course .dis_main ul li{
+    padding-top: 20px;
+}
+.ma-b15{
+    margin-bottom: 15px;
+}
+
+/*课程资源*/
+.course__content{
+    background: url("../../images/neirongkuang.png")no-repeat;
+    background-size:100%100%;
+    position: absolute;
+    width: 60%;
+    height: 83%;
+
+    margin: auto;
+    top:10%;
+    left:0;
+    bottom: 0;
+    right: 0;
+
+}
+
+.course_head{
+    /*padding-top: 5%;*/
+    padding-left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.menulist_ul{
+    display: flex;
+    padding-top: 5%;
+}
+
+.menulist_ul li{
+    background: #fff;
+    margin-right: 20px;
+    padding: 4px 30px;
+    border-top-left-radius: 1em ;
+    border-top-right-radius: 1em ;
+    border: 5px solid transparent;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.menulist_ul .active{
+    border: 5px solid #A5E24D;
+    border-bottom: none;
+}
+.menulist_ul li a{
+    color:#333;
+
+}
+
+.operate_ul{
+
+    display: flex;
+    padding-top: 5%;
+    padding-right: 2%;
+}
+
+.operate_ul li{
+    /*padding: 5px 15px;*/
+    margin-left: 15px;
+
+    color: #fff;
+    text-align: center;
+}
+
+.operate_ul li span{
+    display: inline-block;
+    padding: 5px  10px;
+}
+.operate_ul li:nth-child(1){
+    background: url("../../images/shangchuan.png")no-repeat;
+    background-size:100%100%;
+
+}
+.operate_ul li:nth-child(2){
+    background: url("../../images/xiazai.png")no-repeat;
+    background-size:100%100%;
+
+}
+.operate_ul li:nth-child(3){
+    background: url("../../images/shanchu.png")no-repeat;
+    background-size:100%100%;
+
+}
+.operate_ul li:nth-child(4){
+    background: url("../../images/xinjian.png")no-repeat;
+    background-size:100%100%;
+
+}
+.course_table{
+    padding: 3% 5%;
+}
+.course_table table{
+    width: 100%;
+}
+.circle{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    border-radius:50% ;
+    background: #F1D581;
+}
+
+
+.course_table table tr{
+    border-bottom:2px dashed  #A5E24D;
+}
+.course_table table tr td,.course_table table tr th{
+    padding: 20px 3px;
+}
+.w40{
+    width: 35%;
+}
+
+.course_foot{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.paging_ul {
+    display: flex;
+}
+
+.paging_ul li{
+    padding: 8px;
+
+}
+
+.paging_ul li span,.paging_ul li i{
+    display: inline-block;
+    width: 25px;
+    height:25px ;
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 25px;
+}
+
+.paging_ul li .active{
+    background: #A5E24D;
+}
+
+.paging_ul li i{
+    background: #618F1E;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+
+/*马上学习*/
+.learn_content{
+    position: absolute;
+    width: 65%;
+    height: 75%;
+
+    margin: auto;
+    top:5%;
+    left:0;
+    bottom: 0;
+    right: 0;
+
+
+    display: flex;
+}
+.learn_left{
+    background: url("../../images/mulu.png")no-repeat;
+    background-size:100%100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+.learn_left_ul li{
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.learn_left_ul li span{
+    display: inline-block;
+
+    border-bottom: 2px solid transparent;
+}
+
+.learn_left_ul li .active{
+    border-bottom: 2px solid #fff;
+}
+.learn_right{
+    width:88%;
+    background: url("../../images/neirongkuang3.png")no-repeat;
+    background-size:100%100%;
+}
+
+.learn_mian{
+    padding-top: 12%;
+    padding-left: 7%;
+
+}
+
+.com_title{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 20px;
+    border: 2px solid #97D042;
+    background: #A6E24E;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.colDF6A1A{
+    color:#DF6A1A
+}
+.learn_con{
+    display: flex;
+    padding-left:10%;
+    height: 60%;
+    padding-top: 3%;
+}
+
+.learn_con_left{
+    width: 20%;
+    /*background: url("../../images/xiangyixiang_img1.png")no-repeat;*/
+    /*background-size:100%100%;*/
+    height: 100%;
+    margin-right: 3%;
+}
+
+.learn_con_middle{
+    width: 55%;
+}
+.learn_con_middle ul{
+    height: 47.5%;
+}
+.learn_con_middle ul:first-child{
+    margin-bottom: 5%;
+}
+.learn_con_middle ul li{
+   float: left;
+    width: 46%;
+    height: 100%;
+}
+.learn_con_middle ul li:first-child{
+    margin-right: 4%;
+}
+
+.learn_con_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.learn_con_right  ul li{
+    margin-bottom: 30px;
+}
+
+.learn_con_right  ul li:last-child{
+    margin: 0;
+}
+
+.learn_word{
+    position: absolute;
+    top:9%;
+    left:25%;
+    color: #fff;
+}

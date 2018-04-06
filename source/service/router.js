@@ -128,5 +128,17 @@
 
 						}
 					})
+
+					//马上学习
+					.state('main.soon_learn', {
+						url: '^/soon_learn',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/soon_learn.html',
+								controller: 'soon_learnCtrl'
+							}
+
+						}
+					})
 			}]);
 

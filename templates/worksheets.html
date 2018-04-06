@@ -1,1 +1,57 @@
-<h1>{{data}}</h1>
+<div class="worksheets h100">
+    <div class="dig_content">
+        <span class="dis_word">作业任务</span>
+        <span class="work_evaluate">作业评价</span>
+        <div class="work_menu">
+            <i class="icon-left hover" ng-click="num=num-1"></i>
+            <span>
+                第{{num}}课时&nbsp;&nbsp;{{name}}
+            </span>
+            <i class="icon-right hover" ng-click="num=num+1"></i>
+        </div>
+
+
+        <div class="work_main">
+            <span class="colorCom">*将不同物体与对应的重量以及使用的工具连线</span>
+
+            <div class="work_main_con ma-tl5">
+                <ul class="work_main_ul">
+                    <li ng-repeat="item in mainList track by $index ">
+                        <img ng-src={{item.img}}  class="img-responsive" align="middle" alt=""/>
+                    </li>
+                </ul>
+                <ul class="work_main_word">
+                    <li ng-repeat="item in mainListWord track by $index">
+                        {{item}}
+                    </li>
+                </ul>
+            </div>
+            <div class="work_main_con">
+                <ul class="work_main_ul">
+                    <li ng-repeat="item in mainList track by $index ">
+                        <img ng-src={{item.img}}  class="img-responsive" align="middle" alt=""/>
+                    </li>
+                </ul>
+                <ul class="work_main_word">
+                    <li ng-repeat="item in mainListWord track by $index">
+                        {{item}}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="work_main_right">
+                <ul>
+                    <li class="backEEA151">
+                        上一页
+                    </li>
+                    <li class="backEEA151">
+                        下一页
+                    </li>
+                    <li class="backA6E24E">
+                        返回
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

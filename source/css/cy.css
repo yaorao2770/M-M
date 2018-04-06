@@ -63,6 +63,7 @@
     margin:0 auto;
     position: relative;
     padding-top: 175px;
+    padding-bottom: 28px;
 }
 .teacher-evaluate .back{
     position: absolute;
@@ -203,7 +204,7 @@
     margin-right: 5px;
 }
 .mutual-evaluate .footer{
-    padding: 28px 0;
+    padding-top: 28px;
 }
 .mutual-evaluate .zan-log-wrap{
     background: #fff;
@@ -331,8 +332,8 @@
 }
 .pagination{
     position: absolute;
-    left: 40%;
-    bottom: 19px;
+    left: 37%;
+    bottom: 56px;
 }
 .split-line{
     padding-top: 20px;

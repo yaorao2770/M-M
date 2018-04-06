@@ -1,1 +1,26 @@
-<h1>{{data}}</h1>
+<div class="h100 wicro_course">
+    <div class="dig_content">
+        <span class="dis_word">微课</span>
+
+        <div class="dig_head">
+            <ul >
+                <li ng-repeat="item in liList track by $index" >
+                    <a ng-bind="item" class="hover" ng-class="{active:isSelect==$index}" ng-click="select_dis($index)"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dis_main">
+            <ul>
+                <li ng-repeat="item in mainList track by $index">
+                    <img ng-src={{item.img}} alt="" class="img-responsive ma-b15"/>
+
+                    <span ng-bind="item.name" class="font-16 ma-tl5"></span>
+
+                    <img  ng-src="images/bofang.png" class="play_img"  alt=""/>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

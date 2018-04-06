@@ -24,7 +24,6 @@ app.controller('course_evaluateCtrl', ['$scope',function($scope){
 	// 点击头像，高亮
 	$scope.clickImg = function(i){
 		$scope.curNum = i;
-		// $scope.imgUrlActive = 'images/evaluate/avater-active.png';
 	};
 
 }]);
