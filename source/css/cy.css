@@ -1,7 +1,7 @@
 /* 课程评价 */
 .evaluation-subMenu{
-	width: 100px;
-	/*margin-left: 8px;*/
+    width: 100px;
+    /*margin-left: 8px;*/
 }
 .evaluate{
     background: url('../../images/evaluate/kechengpingjia_bg.png');
@@ -107,7 +107,7 @@
 .teacher-evaluate .list-item p{
     line-height: 27px;
 }
-.teacher-pagination > li:first-child > a, 
+.teacher-pagination > li:first-child > a,
 .teacher-pagination > li:first-child > span,
 .teacher-pagination > li:last-child > a,
 .teacher-pagination > li:last-child > span{
@@ -116,7 +116,7 @@
 
 .teacher-pagination > .active > a,
 .teacher-pagination > .active > span,
-.teacher-pagination > .active > a:hover, 
+.teacher-pagination > .active > a:hover,
 .teacher-pagination > .active > span:hover,
 .teacher-pagination > .active > a:focus,
 .teacher-pagination > .active > span:focus{
@@ -221,14 +221,14 @@
     padding: 20px;
 }
 .mutual-evaluate .zan{
-   float: left;
-   width: 160px;
+    float: left;
+    width: 160px;
 }
 .mutual-evaluate .get-more{
-   text-align: center;
-   color: #F8CF73;
-   font-weight: bold;
-   cursor: pointer;
+    text-align: center;
+    color: #F8CF73;
+    font-weight: bold;
+    cursor: pointer;
 }
 .mutual-evaluate .zan-total{
     text-align: center;
@@ -382,9 +382,9 @@
 
 /* 互动学习 */
 .interactive{
-	position: relative;
-	width: 900px;
-	margin:0 auto;
+    position: relative;
+    width: 900px;
+    margin:0 auto;
     /*padding-bottom: 28px;*/
 }
 
@@ -406,7 +406,7 @@
     top: 95px;
 }
 .intera-cards-bg>span{
-	position: absolute;
+    position: absolute;
     top: 36px;
     right: 45px;
     font-size: 22px;
@@ -414,20 +414,20 @@
     color: #fff;
 }
 .intera-nav{
-	position: absolute;
+    position: absolute;
     left: 57px;
     top: 210px;
     cursor: pointer;
     font-size: 22px;
 }
 .intera-nav:nth-of-type(2){
-	left: 250px;
+    left: 250px;
 }
 .intera-nav:nth-of-type(3){
-	left: 450px;
+    left: 450px;
 }
 .intera-nav>span{
-	color: #fff;
+    color: #fff;
     position: absolute;
     left: 21px;
     top: 5px;
@@ -458,7 +458,7 @@
     /*margin-bottom: 10px;*/
 }
 .intera-question .text,.intera-question .date{
-	font-size: 20px;
+    font-size: 20px;
 }
 .intera-question .data-icon{
     position: absolute;
@@ -467,7 +467,7 @@
     text-align: right;
 }
 .intera-question .icons{
-	color: #F2B030;
+    color: #F2B030;
 }
 .pagination{
     position: absolute;
