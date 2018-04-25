@@ -6,7 +6,7 @@ app.controller('course_evaluateCtrl', ['$scope',function($scope){
     $scope.data='课程评价页面';
 
     $scope.totalItems  = 64;
-	$scope.currentPage = 3;
+	$scope.currentPage = 1;
 	$scope.itemsPerPage = 3;
 	$scope.maxSize = 5;
 

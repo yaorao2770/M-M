@@ -59,12 +59,6 @@ li{
 
 input,button,select{outline:none}
 
-/*#content input[type="text"]:focus,*/
-/*#content input[type="password"]:focus,*/
-/*#content input[type="number"]:focus,*/
-/*#content textarea:focus,*/
-/*#content select:focus{border:1px solid #F4A668;}*/
-
 button:hover,.fa:hover{
   opacity: 0.8;
 }
@@ -88,8 +82,6 @@ button[disabled], html input[disabled]{
 }
 
 input:focus{ outline:none; }
-
-
 
 .colorRed{
   color: #F22727;
@@ -130,5 +122,9 @@ input:focus{ outline:none; }
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus{
-  background: #fff;
+  /*background: #fff;*/
+}
+
+.pagination-sm > li > a{
+  padding: 3px 10px;
 }

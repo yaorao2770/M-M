@@ -1,0 +1,44 @@
+<div class="interactive_watch evaluate h100">
+	<div class="my-wrapper">
+		<img ng-src="images/interactive/biaoti.png" class="title">
+		<div class="video">
+
+			<span class="blue-pot color-pot">
+				<span>仓鼠1</span>
+			</span>
+			<span class="yellow-pot color-pot">
+				<span>仓鼠2</span>
+			</span>
+			<span class="orange-pot color-pot">
+				<span>仓鼠3</span>
+			</span>
+			<span class="green-pot color-pot">
+				<span>仓鼠4</span>
+			</span>
+			<div class="cl"></div>
+			<div class="video-btn">
+				<span class="video-1">摄像头1</span>
+				<span class="video-2">摄像头2</span>
+				<span class="video-3">摄像头3</span>
+			</div>
+		</div>
+		<div class="canlendar">
+
+		</div>
+		<div class="cl"></div>
+		<div class="footer">
+			<div class="intera-footer-title">仓鼠观察记录</div>
+			<ul class="fl">
+				<li ng-repeat="item in [1,2,3,4]" class="intera-footer-li" ng-init="time=4">
+					<span>2018年3月2{{4-$index}}日： 今天，我们小组的仓鼠胃口似乎特别好……</span>
+				</li>
+			</ul>
+			<span class="intera-footer-scroller"></span>
+			<div class="wrap-house">
+				<span>请填写观察记录</span>
+				<button class="intera-footer-save-btn">保存</button>
+			</div>
+			<div class="cl"></div>
+		</div>
+	</div>
+</div>

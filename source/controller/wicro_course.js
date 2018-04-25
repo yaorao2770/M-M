@@ -3,7 +3,7 @@
  */
 app.controller('wicro_courseCtrl', ['$scope',function($scope){
 
-    $scope.liList=['全部','仓鼠课程主题','其他微课主题','其他微课主题'];
+    $scope.liList=['仓鼠课程主题'];
     $scope.isSelect=0;
 
     $scope.select_dis=function(index){
@@ -26,16 +26,16 @@ app.controller('wicro_courseCtrl', ['$scope',function($scope){
     };
 
     $scope.mainList1=[
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题1'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题2'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题3'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题4'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题5'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题6'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题7'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题8'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题9'},
-        {img:'images/img1.png',name:'测量仓鼠记忆力问题10'}  ];
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题1'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题2'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题3'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题4'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题5'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题6'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题7'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题8'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题9'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题10'}  ];
 
 
 

@@ -1,10 +1,11 @@
 /* 课程评价 */
 .evaluation-subMenu{
 	width: 100px;
-	margin-left: 8px;
+	/*margin-left: 8px;*/
 }
 .evaluate{
-    background: url('../../images/bg2.png');
+    background: url('../../images/evaluate/kechengpingjia_bg.png');
+    /*background-size: 100%;*/
 }
 .self-evaluate .title{
     width: 250px;
@@ -15,12 +16,12 @@
     cursor: pointer;
 }
 .self-evaluate>.wrapper{
-    padding-top: 175px;
+    padding-top: 115px;
     width: 1000px;
     margin: 0 auto;
 }
 .self-evaluate .split-line{
-    margin:20px 0 40px 0;
+    margin:0 0 20px 0;
 }
 .self-evaluate-lists>li{
     float: left;
@@ -32,7 +33,7 @@
 }
 .self-evaluate-lists img{
     width: 311px;
-    height: 250px;
+    height: 220px;
 }
 .self-evaluate-lists .list-title{
     position: absolute;
@@ -62,27 +63,31 @@
     width: 1000px;
     margin:0 auto;
     position: relative;
-    padding-top: 175px;
-    padding-bottom: 28px;
+    padding-top: 130px;
+    /*padding-bottom: 28px;*/
+}
+
+.teacher-wrap{
+    width: 100%;
+    height: 580px;
 }
 .teacher-evaluate .back{
     position: absolute;
-    top: 181px;
+    top: 150px;
     right: 30px;
     width: 200px;
     cursor: pointer;
 }
 .teacher-evaluate .title{
+    width: 225px;
     position: absolute;
-    top: 198px;
-    font-size: 50px;
-    left: 50px;
-    font-weight: bold;
+    top: 118px;
+    left: 30px;
 }
 .teacher-evaluate .lists{
     position: absolute;
     left: 50px;
-    top: 337px;
+    top: 225px;
     padding:20px 50px 0 0;
 }
 .teacher-evaluate .list-item{
@@ -93,7 +98,7 @@
     width: 80%;
 }
 .teacher-evaluate .list-title{
-    margin:20px 0 25px 0;
+    margin:15px 0;
     color: #46B8D3;
 }
 .teacher-evaluate .list-item:nth-of-type(1) .list-title{
@@ -137,19 +142,20 @@
 }
 .mutual-evaluate .avater-wrap img{
     width: 85px;
+    cursor: pointer;
 }
 .mutual-cards{
     margin-top: -40px;
     float: left;
     width: 1000px;
-    height: 330px;
+    height: 290px;
 }
 .mutual-evaluate .back{
     margin-right: 60px;
 }
 .mutual-evaluate .blue-wrap{
     position: absolute;
-    top: 355px;
+    top: 270px;
     left: 30px;
 }
 .blue-wrap i{
@@ -186,7 +192,7 @@
 }
 .mutual-evaluate .logs-wrap{
     position: absolute;
-    top: 430px;
+    top: 330px;
     left: 30px;
     width: 80%;
 }
@@ -204,7 +210,7 @@
     margin-right: 5px;
 }
 .mutual-evaluate .footer{
-    padding-top: 28px;
+    padding-top: 15px;
 }
 .mutual-evaluate .zan-log-wrap{
     background: #fff;
@@ -227,7 +233,7 @@
 .mutual-evaluate .zan-total{
     text-align: center;
     position: absolute;
-    width: 69px;
+    width: 82px;
     left: -107px;
     font-size: 23px;
     top: 37px;
@@ -242,29 +248,162 @@
 .mutual-evaluate .thumbs-rotate{
     transform: rotateY(180deg);
 }
+.intera_list{
+    left: -5px;
+}
+.intera_list ul{
+    width: 67px;
+}
+.interactive_watch .video{
+    width: 520px;
+    height: 265px;
 
-
+    background: url(../../images/interactive/video.png);
+    background-size: 100% 100%;
+    float: left;
+    position: relative;
+    left:50px
+}
+.interactive_watch .color-pot{
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    left: -50px;
+    position: relative;
+    cursor: pointer;
+}
+.interactive_watch .green-pot{
+    background: url(../../images/interactive/green-pot.png);
+    background-size: 100%;
+}
+.interactive_watch .orange-pot{
+    background: url(../../images/interactive/orange-pot.png);
+    background-size: 100%;
+}
+.interactive_watch .yellow-pot{
+    background: url(../../images/interactive/yellow-pot.png);
+    background-size: 100%;
+}
+.interactive_watch .blue-pot{
+    background: url(../../images/interactive/blue-pot.png);
+    background-size: 100%;
+}
+.interactive_watch .canlendar{
+    width: 320px;
+    height: 265px;
+    background: url(../../images/interactive/canlendar.png);
+    background-size: 100% 100%;
+    float: right;
+    margin-left: 20px;
+    /*margin-top: 10px;*/
+}
+.interactive_watch{
+    position: relative;
+}
+.interactive_watch .title{
+    position: absolute;
+    width: 225px;
+    height: 65px;
+    left: 125px;
+    top:75px;
+}
+.interactive_watch .footer{
+    width: 100%;
+    height: 222px;
+    background: url(../../images/interactive/footer-wrap.png);
+    background-size: 100% 100%;
+    padding: 15px 25px;
+}
+.interactive_watch .video-btn{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 84px;
+}
+.interactive_watch .color-pot:nth-of-type(1){
+    margin-top: 30px;
+}
+.interactive_watch .video-btn>span{
+    background: #382A10;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.intera-footer-title{
+    font-size: 20px;
+    color: #F6AB38;
+    font-weight: bold;
+}
+.intera-footer-li{
+    height: 30px;
+    line-height: 30px;
+}
+.intera-footer-scroller{
+    display: inline-block;
+    float: left;
+    width: 9px;
+    height: 115px;
+    background: url(../../images/interactive/scroller.png);
+    background-size: 100% 100%;
+    margin-left: 30px;
+    margin-right: 53px;
+}
+.interactive_watch .wrap-house{
+    float: left;
+    width: 324px;
+    height: 198px;
+    background: url(../../images/interactive/wrap-house.png);
+    background-size: 100% 100%;
+    margin-top: -38px;
+    padding-top: 70px;
+    padding-left: 20px;
+    color: #fff;
+    position: relative;
+}
+.intera-footer-save-btn{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #F6AB38;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
 
 
 /* 互动学习 */
 .interactive{
 	position: relative;
-	width: 80%;
+	width: 900px;
 	margin:0 auto;
-    padding-bottom: 28px;
+    /*padding-bottom: 28px;*/
+}
+
+.interactive-wrap{
+    width: 100%;
+    height: 600px;
 }
 .intera-title{
     color: #F2B131;
     font-size: 50px;
     position: absolute;
-    top: 170px;
+    top: 120px;
     left: 51px;
     font-weight: bold;
 }
 .intera-cards-bg{
     position: absolute;
-    right: 0;
-    top: 150px;
+    right: -10px;
+    top: 95px;
 }
 .intera-cards-bg>span{
 	position: absolute;
@@ -277,8 +416,9 @@
 .intera-nav{
 	position: absolute;
     left: 57px;
-    top: 285px;
+    top: 210px;
     cursor: pointer;
+    font-size: 22px;
 }
 .intera-nav:nth-of-type(2){
 	left: 250px;
@@ -291,7 +431,6 @@
     position: absolute;
     left: 21px;
     top: 5px;
-    font-size: 22px;
 }
 .intera-nav>.arrow{
     position: absolute;
@@ -301,12 +440,12 @@
 }
 .intera-question{
     position: absolute;
-    top: 360px;
+    top: 260px;
     left: 50px;
     width: 90%;
 }
 .intera-question li{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
 }
 .intera-question .img-wrap{
@@ -316,7 +455,7 @@
     margin-right: 20px;
 }
 .intera-question .img-wrap img{
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 .intera-question .text,.intera-question .date{
 	font-size: 20px;
@@ -333,8 +472,231 @@
 .pagination{
     position: absolute;
     left: 37%;
-    bottom: 56px;
+    bottom: 30px;
 }
 .split-line{
-    padding-top: 20px;
+    padding-top: 15px;
+}
+.teacher-evaluate .pagination{
+    bottom: 0px;
+}
+.self-evaluate .pen{
+    width: 150px;
+    position: absolute;
+    left: 400px;
+    top: 72px;
+}
+
+@media (max-width:1366px){
+    .evaluate{
+        background-size: 100%;
+    }
+    .interactive{
+        width: 900px;
+    }
+    .interactive-wrap{
+        width: 100%;
+        height: 510px;
+        float: left;
+        /*margin-top: 35px;*/
+    }
+    .intera-title{
+        font-size: 40px;
+        top: 120px;
+    }
+    .intera-cards-bg{
+        top: 95px;
+        width: 197px;
+    }
+    .intera-cards-bg>span{
+        top: 28px;
+        right: 29px;
+        font-size: 20px;
+    }
+    .intera-nav{
+        top:195px;
+        width: 130px;
+        font-size: 18px;
+    }
+    .intera-question{
+        top: 250px;
+        width: 89%;
+    }
+    .intera-question li{
+        margin-bottom: 15px;
+    }
+    .intera-question .img-wrap{
+        vertical-align: -39px;
+    }
+    .intera-question .text, .intera-question .date{
+        font-size: 16px;
+    }
+    .intera-question .data-icon{
+        top: 0;
+    }
+    .interactive .split-line{
+        padding-top: 11px;
+        height: 12px;
+    }
+    .intera-question .img-wrap img{
+        width: 45px;
+        margin-bottom: 3px;
+    }
+    .intera-nav>.arrow{
+        width: 20px;
+    }
+    .intera-nav:nth-of-type(2){
+        left: 220px;
+    }
+    .intera-nav:nth-of-type(3){
+        left: 380px;
+    }
+    .pagination{
+        bottom: 25px;
+        left: 32%;
+    }
+    .teacher-evaluate .pagination{
+        bottom: 23px;
+    }
+    .self-evaluate>.wrapper{
+        padding-top: 127px;
+        width: 900px;
+        position: relative;
+        padding-bottom: 13px;
+    }
+    .self-evaluate .title{
+        position: absolute;
+        left: 0;
+    }
+    .self-evaluate .split-line{
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: 25px;
+    }
+    .self-evaluate-lists img{
+        width: 270px;
+        height: 192px;
+    }
+    .self-evaluate-lists>li{
+        margin: 0 40px 12px 0;
+    }
+    .self-evaluate-lists .cards-text li{
+        height: 23px;
+        line-height: 25px;
+    }
+    .self-evaluate-lists .cards-text li:nth-of-type(2){
+        margin-top: 34px;
+    }
+    .self-evaluate-lists .cards-text{
+        top: 40px;
+        width: 239px;
+    }
+    .self-evaluate-lists .list-title{
+        font-size: 20px;
+    }
+    .self-evaluate .back{
+        margin-bottom: -10px;
+    }
+    .my-wrapper{
+        width: 900px;
+        padding:130px 0 17px 0;
+    }
+    .mutual-title{
+        width: 210px;
+        position: absolute;
+    }
+    .mutual-evaluate .avater-wrap>span{
+        left: 250px;
+        font-size: 14px;
+    }
+    .mutual-evaluate .avater-wrap img{
+        width: 68px;
+        cursor: pointer;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(2){
+        left: 345px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(3){
+        left: 440px;
+    }
+    .mutual-cards{
+        margin-top: 20px;
+        width: 900px;
+        height: 230px;
+    }
+    .mutual-evaluate .blue-wrap{
+        top: 263px;
+        left: 25px;
+    }
+    .blue-wrap .text{
+        font-size: 18px;
+        top: 5px;
+        left: 45px;
+    }
+    .mutual-evaluate .class-wrap{
+        width: 240px;
+    }
+    .blue-wrap i{
+        font-size: 25px;
+        top: 6px;
+    }
+    .class-container>.right{
+        left: 209px;
+    }
+    .calendar-wrap{
+        width: 165px;
+        height: 36px;
+    }
+    .mutual-evaluate .logs-wrap{
+        top: 310px;
+    }
+    .mutual-evaluate .logs {
+        height: 34px;
+        line-height: 34px;
+    }
+    .mutual-evaluate .zan-log-wrap{
+        padding:15px;
+    }
+    .mutual-evaluate .footer{
+        padding-top: 16px;
+    }
+    .teacher-evaluate .back{
+        top: 125px;
+        width: 180px;
+    }
+    .teacher-wrap{
+        height: 510px;
+        width: 100%;
+        margin-top: -30px;
+        float: left;
+    }
+    .teacher-evaluate .lists{
+        top: 200px;
+        left: 40px;
+    }
+    .teacher-evaluate .list-item{
+        margin-bottom: 12px;
+        padding-bottom: 11px;
+    }
+    .teacher-evaluate .list-title{
+        margin: 13px 0 12px 0;
+        font-size: 24px;
+    }
+    .teacher-evaluate .list-item p{
+        line-height: 25px;
+    }
+    .teacher-evaluate .my-wrapper{
+        padding-bottom: 26px;
+    }
+    .teacher-evaluate .list-item:nth-of-type(2n+2){
+        width: 88%;
+    }
+}
+
+.course_list .evaluation-subMenu{
+    background: #35B1D1;
+    border-color: #fff;
+}
+.course_list .interUrl{
+    background: #F3C768;
 }

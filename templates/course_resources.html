@@ -1,55 +1,48 @@
 <div class="h100 course_resource">
-    <div class="course__content">
-        <div class="course_head">
-            <ul class="menulist_ul">
-                <li ng-repeat="item in menulist"
-                    class="hover"
-                    ng-class="{active:isSelect==$index}"
-                    ng-click="selectCourse($index)">
-                    <a ng-bind="item"></a>
-                </li>
-            </ul>
-
-            <ul class="operate_ul">
-                <li ng-repeat="item in operatelist" class="hover">
-                    <span ng-bind="item"></span>
-                </li>
-            </ul>
-        </div>
-        <div class="course_table">
-            <table>
-                <thead>
-                    <th><i class="circle"></i></th>
-                    <th class="text-left w40">全选</th>
-                    <th class="text-center">大小</th>
-                    <th class="text-right">修改日期</th>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="item in courseTable track by $index">
-                        <td><i class="circle"></i></td>
-                        <td ng-bind="item.name" class="text-left"></td>
-                        <td ng-bind="item.size" class="text-center"></td>
-                        <td ng-bind="item.date" class="text-right"></td>
-                    </tr>
-                </tbody>
+    <div class="dig_content">
+        <img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>
+        <span class="dis_word">课程资源</span>
 
 
-            </table>
 
-            <div class="w100 text-center course_foot">
-                <ul class="paging_ul">
-                    <li>
-                        <i class="fa fa-chevron-left"></i>
-                    </li>
-                    <li ng-repeat="item in numList" ng-click="selectNum($index)">
-                        <span ng-class="{active:isNum==$index}" class="hover">{{item}}</span>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-chevron-right"></i>
+            <div class="dig_head">
+                <ul >
+                    <li ng-repeat="item in menulist" >
+                        <a ng-bind="item" class="hover" ng-class="{active:isSelect==$index}" ng-click="selectCourse($index)"></a>
                     </li>
                 </ul>
             </div>
+
+            <ul class="operate_ul">
+                <li ng-repeat="item in operatelist" class="hover">
+                    <button ng-bind="item"></button>
+                    <!--<span ></span>-->
+                </li>
+            </ul>
+        <div  >
+            <div class="dis_main">
+                <ul>
+                    <li ng-repeat="item in mainList track by $index">
+                        <img ng-src={{item.img}} alt="" class="img-responsive" ui-sref="main.soon_learn"/>
+                        <span>第{{$index+1}}课</span><br>
+                        <span ng-bind="item.name" class="font-14"></span>
+
+                    </li>
+                </ul>
+            </div>
+
+            <ul uib-pagination
+                class="pagination-sm resources_pagination"
+                total-items="totalItems"
+                items-per-page = "itemsPerPage"
+                num-pages="numPages"
+                force-ellipses="true"
+                ng-model="currentPage"
+                ng-change="changePage()"
+                max-size="maxSize"
+                previous-text="&lsaquo;"
+                next-text="&rsaquo;"></ul>
         </div>
+
     </div>
 </div>

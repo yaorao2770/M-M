@@ -35,18 +35,29 @@
 						}
 					})
 
-					//互动学习
-					.state('main.interactive', {
-						url: '^/interactive',
+					//互动学习  -- 问题交流
+					.state('main.interactive_study', {
+						url: '^/interactive_study',
 						views: {
 							'content@main': {
-								templateUrl: 'templates/interactive.html',
+								templateUrl: 'templates/interactive_study.html',
 								controller: 'interactiveCtrl'
 							}
 
 						}
 					})
 
+					//互动学习  -- 仓鼠观察
+					.state('main.interactive_watch', {
+						url: '^/interactive_watch',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_watch.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
 
 					//课程评价	--- 自评
 					.state('main.self_evaluate', {

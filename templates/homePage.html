@@ -1,17 +1,17 @@
 <div class="home_page h100">
     <div class="page_js">
-        <div class="course_js">
-            <a class="hover" ng-click="isCourse=true">课程介绍</a>
+        <div    class="{{isCourse?'active course_js':'course_js'}}">
+            <a  ng-click="isCourse=true" class="hover">课程介绍</a>
         </div>
-        <div class="terrace_js">
-            <a class="hover" ng-click="isCourse=false">平台介绍</a>
+        <div   class="{{!isCourse?'active terrace_js':'terrace_js'}}">
+            <a  ng-click="isCourse=false" class="hover">平台介绍</a>
         </div>
     </div>
 
     <div class="js_content">
         <div ng-show="isCourse">
             <h3>M&M课程介绍</h3>
-            <div>
+            <div class="word_div bold">
                 这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍
                 这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍
                 这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍这是课程介绍
@@ -21,7 +21,7 @@
 
         <div ng-show="!isCourse">
             <h3>M&M平台介绍</h3>
-            <div>
+            <div class="word_div bold">
                 这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍
                 这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍
                 这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这是平台介绍这
@@ -35,6 +35,6 @@
     <span class="course_word hover"   ng-class="{true:'active'}[isCourse]">课程介绍</span>
     <span class="terrace_word hover "  ng-class="{false:'active'}[isCourse]">平台介绍</span>
 
-    <img class="img_right hover" src="images/shouye_jiantou.png" alt=""/>
-    <img class="img_left hover" src="images/shouye_jiantou.png" alt=""/>
+    <img class="img_right hover" src="images/homepage/shouye_jiantou.png" alt=""/>
+    <img class="img_left hover" src="images/homepage/shouye_jiantou.png" alt=""/>
 </div>

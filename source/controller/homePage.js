@@ -3,6 +3,8 @@
 
         $scope.data='首页'
 
+         $scope.isCourse=true;
+
      }]);
 
 

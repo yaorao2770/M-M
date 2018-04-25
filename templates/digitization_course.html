@@ -1,5 +1,6 @@
 <div class="h100 digitization_course">
    <div class="dig_content">
+        <img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>
         <span class="dis_word">数字化教材</span>
 
        <div class="dig_head">
@@ -14,12 +15,24 @@
             <ul>
                 <li ng-repeat="item in mainList track by $index">
                     <img ng-src={{item.img}} alt="" class="img-responsive" ui-sref="main.soon_learn"/>
-                    <span>第{{$index}}课</span><br>
-                    <span ng-bind="item.name" class="font-16"></span>
+                    <span>第{{$index+1}}课</span><br>
+                    <span ng-bind="item.name" class="font-14"></span>
 
                 </li>
             </ul>
        </div>
+
+       <ul uib-pagination
+           class="pagination-sm resources_pagination"
+           total-items="totalItems"
+           items-per-page = "itemsPerPage"
+           num-pages="numPages"
+           force-ellipses="true"
+           ng-model="currentPage"
+           ng-change="changePage()"
+           max-size="maxSize"
+           previous-text="&lsaquo;"
+           next-text="&rsaquo;"></ul>
    </div>
 </div>
 

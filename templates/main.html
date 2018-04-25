@@ -1,23 +1,25 @@
 <div class="w100 header">
-    <img ng-src="images/logo.png" alt=""/>
-    <ul>
-        <li class="butE65260" ui-sref="main.homePage">首页</li>
-        <li class="but97C83E course" ng-mouseenter="enter=true" ng-mouseleave="enter=false">
+    <img ng-src="images/homepage/logo.png" alt="" class="header_img"/>
+    <ul class="menu">
+        <li  ui-sref="main.homePage"  class="{{type==1?'active':''}}" ng-click="type=1">首页</li>
+        <li  class="{{type==2?'active':''}}" ng-click="type=2"
+             ng-mouseenter="enter=true"
+             ng-mouseleave="enter=false" >
             课程中心
             <div  ng-show="enter" class="course_list">
                 <ul>
-                    <li ui-sref="main.digitization_course" ng-click="num=1">
+                    <li ui-sref="main.digitization_course" ng-click="num=1;type=2">
                         <span  class="{{num==1?'active':''}}">数字化教程</span>
                     </li>
-                    <li ui-sref="main.worksheets" ng-click="num=2">
+                    <li ui-sref="main.worksheets" ng-click="num=2;type=2">
                         <span class="{{num==2?'active':''}}" >学习单</span>
 
                     </li>
-                    <li ui-sref="main.wicro_course" ng-click="num=3">
+                    <li ui-sref="main.wicro_course" ng-click="num=3;type=2">
                         <span class="{{num==3?'active':''}}">微课</span>
 
                     </li>
-                    <li ui-sref="main.course_resources" ng-click="num=4">
+                    <li ui-sref="main.course_resources" ng-click="num=4;type=2">
 
                         <span class="{{num==4?'active':''}}">课程资源</span>
 
@@ -25,19 +27,31 @@
                 </ul>
             </div>
         </li>
-        <li class="butF3C768" ui-sref="main.interactive">互动学习</li>
-        <li class="but35B1D1 course" ng-mouseenter="showMenu=true" ng-mouseleave="showMenu=false">
-            课程评价
-            <div ng-show="showMenu" class="course_list">
+        <li ng-mouseenter="showIntervalMenu=true" ng-mouseleave="showIntervalMenu=false" class="{{type==3?'active':''}}" ng-click="type=3">
+            互动学习
+            <div ng-show="showIntervalMenu" class="course_list ">
                 <ul class="evaluation-subMenu">
-                    <li ui-sref="main.self_evaluate" ng-click="num=5">
-                        <span  class="{{num==5?'active':''}}">自评</span>
+                    <li ui-sref="main.interactive_study" ng-click="num=5;type=3">
+                        <span  class="{{num==5?'active':''}}">互动学习</span>
                     </li>
-                     <li ui-sref="main.mutual_evaluate" ng-click="num=6">
-                        <span  class="{{num==6?'active':''}}">互评</span>
+                     <li ui-sref="main.interactive_watch" ng-click="num=6;type=3">
+                        <span  class="{{num==6?'active':''}}">仓鼠观察</span>
                     </li>
-                    <li ui-sref="main.teacher_evaluate" ng-click="num=7">
-                        <span class="{{num==7?'active':''}}" >教师评价</span>
+                </ul>
+            </div>
+        </li>
+        <li ng-mouseenter="showMenu=true" ng-mouseleave="showMenu=false" class="{{type==4?'active':''}}" ng-click="type=4">
+            课程评价
+            <div ng-show="showMenu" class="course_list ">
+                <ul class="evaluation-subMenu">
+                    <li ui-sref="main.self_evaluate" ng-click="num=7;type=4">
+                        <span  class="{{num==7?'active':''}}">自评</span>
+                    </li>
+                     <li ui-sref="main.mutual_evaluate" ng-click="num=8;type=4">
+                        <span  class="{{num==8?'active':''}}">互评</span>
+                    </li>
+                    <li ui-sref="main.teacher_evaluate" ng-click="num=9;type=4">
+                        <span class="{{num==9?'active':''}}" >教师评价</span>
                     </li>
                 </ul>
             </div>
