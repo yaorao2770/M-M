@@ -21,16 +21,16 @@ app.controller('digitization_courseCtrl', ['$scope',function($scope){
     };
 
     $scope.mainList1=[
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题1'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题2'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题3'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题4'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题5'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题6'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题7'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题8'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题9'},
-        {img:'images/digitization_course/img1.png',name:'测量仓鼠记忆力问题10'}  ];
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重1'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重2'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重3'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重4'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重5'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重6'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重7'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重8'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重9'},
+        {img:'images/digitization_course/img1.png',name:'测量仓鼠体重10'}  ];
 
 
 

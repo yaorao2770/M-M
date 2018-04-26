@@ -10,15 +10,30 @@
                 </li>
             </ul>
         </div>
-        <div class="learn_right h100" ng-if="isSelect==1 || isSelect==0">
+        <div class="learn_right h100" >
             <img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>
-            <span class="dis_word">第四课</span>
+            <span class="dis_word">测量仓鼠体重</span>
 
+            <div ng-if="isSelect==0" class="h100">
+
+
+                <div class="learn_select0" >
+
+                    <img src="images/digitization_course/select0.png" class="w100 h100" alt=""/>
+                </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+
+            <div ng-if="isSelect==1" class="h100">
 
                 <div class="learn_mian">
                     <span class="com_title">想一想</span>
                     <span class="colDF6A1A">平时是怎么测量物体的重量的？用了那些工具?</span>
                 </div>
+
+
                 <div class="learn_con " >
                     <div class="learn_con_left">
                         <img ng-src="images/digitization_course/xiangyixiang_img1.png" class="img-responsive h100" alt=""/>
@@ -43,54 +58,134 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="learn_con_right">
-                        <ul>
-                            <li class="backEEA151 hover" ng-click="goPrevious()">
-                                上一页
-                            </li>
-                            <li class="backEEA151 hover" ng-click="goNext()">
-                                下一页
-                            </li>
-                            <li class="backA6E24E hover" ui-sref="main.digitization_course">
-                                返回
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
-        </div>
-        <div class="learn_img " ng-if="isSelect==2">
-            <img ng-src="images/digitization_course/chayicha.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
 
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+            <div ng-if="isSelect==2" class="h100">
+
+                <div class="learn_mian">
+                    <span class="com_title">查一查</span>
+                    <span class="colDF6A1A">人们怎么测量不同动物的体重</span>
+                </div>
+
+
+                <div class="learn_con " >
+                    <img src="images/digitization_course/chayihcha.png" class="w100 h100" alt=""/>
+                    <span class="span_cha">
+                        1.动物园怎么测量不同动物的体重？记录其中三种办法
+                    </span>
+                </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+
+            <div ng-if="isSelect==3" class="h100">
+
+                <div class="learn_mian">
+                    <span class="com_title">议一议</span>
+                    <span class="colDF6A1A">怎么测量仓鼠的体重？用什么工具比较合适？</span>
+                </div>
+
+
+                <div class="learn_con " >
+                    <img src="images/digitization_course/yiyiyi.png" class="w100 h100" alt=""/>
+                    <span class="span_yi">
+                        1.设计仓鼠体重测量方案
+                    </span>
+                </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+            <div ng-if="isSelect==4" class="h100">
+
+                <div class="learn_mian">
+                    <span class="com_title">学一学</span>
+                    <span class="colDF6A1A">学习电子秤的使用方法</span>
+                </div>
+
+
+                <div class="learn_con " >
+                    <video src="images/digitization_course/xueyixue.mp4" width="100%" height="100%" controls="controls">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+            <div ng-if="isSelect==5" class="h100">
+
+            <div class="learn_mian">
+                <span class="com_title">测一测</span>
+                <span class="colDF6A1A">用电子秤给仓鼠测量体重。</span>
+            </div>
+
+
+            <div class="learn_con " >
+                <img src="images/digitization_course/ceyice.png" class="w85 h100" alt=""/>
+
+                <ul class="span_ce">
+                    <li>
+                        1.记录分工情况
+                    </li>
+                    <li>
+                        2.记录测量过程。
+                    </li>
+                    <li>
+                        3.记录测量结果。
+                    </li>
+                </ul>
+            </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
         </div>
 
-        <div class="learn_img " ng-if="isSelect==3">
-            <img ng-src="images/digitization_course/yiyiyi.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
-        </div>
-        <div class="learn_img " ng-if="isSelect==4">
-            <img ng-src="images/digitization_course/huayihua.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
-        </div>
-        <div class="learn_img " ng-if="isSelect==5">
-            <img ng-src="images/digitization_course/xueyixue.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
+            <div ng-if="isSelect==6" class="h100">
+
+                <div class="learn_mian">
+                    <span class="com_title">讲一讲</span>
+                    <span class="colDF6A1A">汇报我们的实验结果，在实验中获得的收获和感受。</span>
+                </div>
+
+
+                <div class="learn_con " >
+                    <img src="images/digitization_course/jiangyijiang.png" class="w100 h100" alt=""/>
+
+
+                </div>
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
+
+            <div ng-if="isSelect==7" class="h100">
+
+                <div class="learn_mian">
+                    <span class="com_title">评一评</span>
+                    <span class="colDF6A1A">汇报我们的实验结果，在实验中获得的收获和感受。</span>
+                </div>
+
+
+                <div class="learn_con " >
+                    <img src="images/digitization_course/pingyiping.png" class="w100 h100" alt=""/>
+
+                </div>
+
+                <div ng-include="'template.html'" class="learn_con_bottom"></div>
+            </div>
         </div>
 
-        <div class="learn_img " ng-if="isSelect==6">
-            <img ng-src="images/digitization_course/zuoyizo.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
 
-        </div>
-        <div class="learn_img " ng-if="isSelect==7">
-            <img ng-src="images/digitization_course/ceyice.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
-        </div>
-        <div class="learn_img " ng-if="isSelect==8">
-            <img ng-src="images/digitization_course/jiangyijiang.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
 
-        </div>
+
+
+
+
+
+
         <div class="learn_img " ng-if="isSelect==9">
             <img ng-src="images/digitization_course/pingyiping.png"  class="w100 h100" alt=""/>
             <div ng-include="'template.html'"></div>
@@ -100,9 +195,7 @@
     </div>
 
     <script id="template.html" type="text/ng-template">
-        <img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>
-        <span class="dis_word">第四课</span>
-        <ul class="learn_ul">
+        <ul>
             <li class="backEEA151 hover" ng-click="goPrevious()">
                 上一页
             </li>

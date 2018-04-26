@@ -140,6 +140,20 @@
 						}
 					})
 
+
+					//课程资源查看
+
+					.state('main.course_resources_detail', {
+						url: '^/course_resources_detail/:id',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/course_resources_detail.html',
+								controller: 'course_resources_detailCtrl'
+							}
+
+						}
+					})
+
 					//马上学习
 					.state('main.soon_learn', {
 						url: '^/soon_learn',
