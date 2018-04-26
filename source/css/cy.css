@@ -700,3 +700,163 @@
 .course_list .interUrl{
     background: #F3C768;
 }
+
+/*学习单*/
+.sheet-header{
+    background: url('../../images/digitization_course/mulu.png');
+    height: 200px;
+    width: 100px;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+.sheet-header a{
+    color: #fff;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+.sheet-header-item:nth-of-type(1){
+    margin-bottom: 20px;
+}
+.sheetActive{
+    border-bottom:2px solid #fff;
+}
+.sheet-content{
+    border: 8px solid #97C83E;
+    background: #fff;
+    border-radius: 40px;
+    width: 800px;
+    height: 480px;
+    float: right;
+    position: relative;
+    padding: 30px 30px;
+    font-size: 17px;
+}
+.sheet-course-menu{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #97C83E;
+    border: 6px solid #fff;
+    border-radius: 40px;
+    position: absolute;
+    top: -28px;
+    left: 30px;
+    color: #fff;
+    border-bottom-color: #eee;
+}
+.kinds-of-balance{
+    margin-top: 13px;
+}
+.kinds-of-balance li{
+    float: left;
+    margin-right: 50px;
+}
+.kinds-of-balance li:nth-last-of-type(1){
+    margin-right: 0;
+}
+.sheet-imgs{
+    padding-left: 80px;
+    margin-top: 10px;
+}
+.sheet-imgs li{
+    float: left;
+    text-align: center;
+    margin-right: 50px;
+}
+.sheet-imgs img{
+    width: 150px;
+    margin-bottom: -5px;
+}
+.sheet-content input{
+    width: 21px;
+    border: none;
+    padding-left: 2px;
+}
+.sheet-footer span{
+    display: inline-block;
+    padding: 5px 21px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sheet-footer{
+    padding-left: 90px;
+    padding-right: 100px;
+    position: absolute;
+    bottom: 13px;
+    width: 91%;
+}
+.sheet-footer .page-btn{
+    background: #F2A04E;
+}
+.sheet-footer .back-btn{
+    background: #A4E34E;
+}
+.sheet-table{
+    border: 2px solid #333;
+    width: 100%;
+    margin-top: 10px;
+}
+.sheet-table li{
+    float: left;
+    margin-right: 30px;
+}
+.sheet-table tr{
+    border-bottom: 2px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+}
+.sheet-table td{
+    border-right: 2px solid #ccc;
+    text-align: center;
+}
+.sheet-table textarea{
+    border:none;
+    width: 100%;
+    padding: 15px 30px;
+    height: 150px;
+    resize:none
+}
+.sheet-table ul{
+    padding-left: 30px;
+}
+.eee{
+    background: #eee;
+}
+.sheet-table label{
+     margin-bottom: 0; 
+     font-weight: normal; 
+}
+input,button,select,textarea{outline:none}
+.sheet-steps{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.sheet-steps li{
+    height: 35px;
+    line-height: 35px;
+}
+.sheet-upload-img{
+    border: 2px solid #333;
+    text-align: center;
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    height: 309px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sheet-upload-img .top{
+    height: 80%;
+    line-height: 244px;
+    color: #ccc;
+}
+.sheet-upload-img .footer{
+    height: 20%;
+    line-height: 60px;
+    background: #eee;
+    border-top: 1px solid #ccc;
+}
