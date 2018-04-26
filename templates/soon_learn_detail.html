@@ -1,0 +1,123 @@
+<div class="worksheets h100">
+    <div class="my-wrapper">
+        <ul class="sheet-header">
+            <li ng-repeat="item in menulist" class="sheet-header-item">
+                <a ng-bind="item" ng-class="{sheetActive:isSelect==$index}" ng-click="selectCourse($index)"></a>
+            </li>
+    </ul>
+        <div class="sheet-content">
+            <span class="sheet-course-menu">第{{isSelect+1}}课时 测量仓鼠体重</span>
+            <div ng-show="course10">
+                <p>要测量图片中这些物体的重量，分别应当使用什么测量工具？将测量工具的编号填写到图片下方的括号里。</p>
+                <ul class="kinds-of-balance">
+                    <li>A . 电子秤</li>
+                    <li>B . 体重秤</li>
+                    <li>C . 地磅</li>
+                    <li>D . 电子天平</li>
+                    <li>E . 天平秤</li>
+                    <li>F . 吊钩秤</li>
+                 <div class="cl"></div>
+                </ul>
+                <ul class='sheet-imgs'>
+                    <li>
+    <img ng-src="images/digitization_course/sky.png">
+        <p>（ <input type="text" ng-model='balance.type1'>）</p>
+        </li>
+                    <li>
+        <img ng-src="images/digitization_course/frog.png">
+        <p>（ <input type="text" ng-model='balance.type2'>）</p>
+        </li>
+                    <li>
+<img ng-src="images/digitization_course/gril.png">
+<p>（ <input type="text" ng-model='balance.type3'>）</p>
+</li>
+                    <li>
+<img ng-src="images/digitization_course/elephant.png">
+<p>（ <input type="text" ng-model='balance.type4'>）</p>
+</li>
+                    <li>
+<img ng-src="images/digitization_course/book.png">
+<p>（ <input type="text" ng-model='balance.type5'>）</p>
+</li>
+                    <li>
+<img ng-src="images/digitization_course/jewel.png">
+<p>（ <input type="text" ng-model='balance.type6'>）</p>
+</li>
+                    <div class="cl"></div>
+                </ul>
+            </div>
+            <div ng-show="course11">
+                <p>从搜索到的动物体重测量方法中选择3种，用图片的形式记录在下面的表格中。</p>
+                <ul class="sheet-upload-img">
+                    <li class="top">+ 编辑图片</li>
+                    <li class="footer">编辑动物名称</li>
+                </ul>
+                <ul class="sheet-upload-img">
+                    <li class="top">+ 编辑图片</li>
+                    <li class="footer">编辑动物名称</li>
+                    </ul>
+                <ul class="sheet-upload-img">
+                    <li class="top">+ 编辑图片</li>
+                    <li class="footer">编辑动物名称</li>
+                </ul>
+                <div class="cl"></div>
+            </div>
+            <div ng-show="course20">
+                <p>设计仓鼠体重测量方案。（符合的在方框内打“√”）</p>
+                <table class="sheet-table">
+                <tr>
+                    <td class="eee">仓鼠特征</td>
+                    <td>
+                        <ul>
+                        <li ng-repeat="item in courseObj.characters1"><label><input type="checkbox"><span> </span>{{item}}</label></li><br>
+                        <li ng-repeat="item in courseObj.characters2"><label><input type="checkbox"><span> </span>{{item}}</label></li>
+                        <span class="cl"></span>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="eee">测量方法</td>
+                    <td>
+                        <textarea cols="30" rows="10" ng-model='courseObj.measuringMethod'></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="eee">用到的工具</td>
+                    <td>
+                        <ul>
+                            <li ng-repeat="item in courseObj.balances"><label><input type="checkbox"><span> </span>{{item}}</label></li>
+                            <span class="cl"></span>
+                        </ul>
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <div ng-show="course21">
+<p>给以下测量仓鼠体重的操作步骤排序（填编号）。</p>
+<ul class="sheet-steps">
+<li>A ．将仓鼠放进隔离笼内。</li>
+<li>B ．带上两层手套。</li>
+<li>C ．将仓鼠和隔离笼的总重量减去隔离笼的重量，得出仓鼠的体重。</li>
+<li>D ．将仓鼠移出隔离笼。  </li>
+<li>E ．测量仓鼠和隔离笼的总重量。</li>
+<li>F ．测量隔离笼的重量。</li>
+</ul>
+<div>
+（ <input type="text" ng-model='balance.type7'>）→
+（ <input type="text" ng-model='balance.type8'>）→
+（ <input type="text" ng-model='balance.type9'>）→
+（ <input type="text" ng-model='balance.type10'>）→
+（ <input type="text" ng-model='balance.type11'>）→
+（ <input type="text" ng-model='balance.type12'>）
+</div>
+</div>
+            <div class="sheet-footer">
+                <span ng-click="nextPage()" class="page-btn fl" ng-show="course10 || course20">下一页</span>
+                <span ng-click="previousPage()" class="page-btn fl" ng-show="course11 || course21">上一页</span>
+                    <span class="back-btn fr"  ui-sref="main.worksheets">返回</span>
+                    <div class="cl"></div>
+            </div>
+        </div>
+            <div class="cl"></div>
+        </div>
+</div>

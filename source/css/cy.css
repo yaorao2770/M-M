@@ -703,7 +703,7 @@
 
 /*学习单*/
 .sheet-header{
-    background: url('../../images/digitization_course/mulu.png');
+    background: url('../../images/digitization_course/caidan.png');
     height: 200px;
     width: 100px;
     background-size: 100% 100%;
@@ -738,7 +738,7 @@
     display: inline-block;
     padding: 5px 10px;
     background: #97C83E;
-    border: 6px solid #fff;
+    border: 4px solid #fff;
     border-radius: 40px;
     position: absolute;
     top: -28px;

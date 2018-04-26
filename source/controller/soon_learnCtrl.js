@@ -32,7 +32,9 @@ app.controller('soon_learnCtrl', ['$scope',function($scope){
     };
     $scope.goNext=function(){
 
-        if($scope.isSelect<9){
+        console.log($scope.isSelect);
+
+        if($scope.isSelect<7){
             $scope.isSelect=$scope.isSelect+1;
         }
 
