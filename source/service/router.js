@@ -104,7 +104,7 @@
 						}
 					})
 
-					//学习单
+					// 学习单
 					.state('main.worksheets', {
 						url: '^/worksheets',
 						views: {
@@ -112,7 +112,25 @@
 								templateUrl: 'templates/worksheets.html',
 								controller: 'worksheetsCtrl'
 							}
-
+						}
+					})
+					// 学习单 -- 作业1
+					.state('main.worksheets.work1', {
+						url: '^/work1',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/worksheets.html',
+								controller: 'worksheetsCtrl'
+							}
+						}
+					})
+					.state('main.worksheets.work2', {
+						url: '^/work2',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/worksheets.html',
+								controller: 'worksheetsCtrl'
+							}
 						}
 					})
 
