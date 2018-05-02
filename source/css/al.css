@@ -138,8 +138,11 @@
 
     margin: auto;
     justify-content: center;
-    padding-top: 30px;
-    padding-right: 150px;
+
+    position: absolute;
+    top:18%;
+    width:100%;
+    margin-left: -3rem;
 
 }
 .course_js{
@@ -200,7 +203,7 @@
 .js_content{
     /*position: absolute;*/
     position: relative;
-    top:16%;
+    top:40%;
     width: 42%;
     margin: auto;
     line-height:1.5;
@@ -252,8 +255,8 @@
     /*background: url("../../images/neirongkuang3.png")no-repeat;*/
     /*background-size:100%100%;*/
     position: absolute;
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    height: 70%;
     margin: auto;
     top:15%;
     left:0;
@@ -271,15 +274,15 @@
 .head_img{
     position: absolute;
     top:-16%;
-    left: 1%;
+    left: 2%;
     height: 85px;
     width: 240px;
 }
 
 .dis_word{
     position: absolute;
-    top:-5.5%;
-    left:15%;
+    top:52%;
+    left:50%;
     color: #fff;
 }
 .dig_head{
@@ -309,11 +312,11 @@
 }
 .dis_main ul li{
    float: left;
-    width: 19%;
+    width: 22%;
     text-align: center;
     padding-top: 15px;
     position: relative;
-    margin-right:1% ;
+    margin-right:3% ;
 }
 
 .font-14{
@@ -942,4 +945,24 @@
 .empty{
     display: inline-block;
     width: 32px;
+}
+
+@media(min-height: 900px){
+    .js_content{
+        top:42%
+}
+
+    .head_img{
+        top:-11%
+    }
+
+    .dis_main ul li{
+        padding-top: 35px;
+    }
+}
+
+@media (min-height: 800px) and (max-height: 899px)  {
+    .head_img{
+        top:-13%
+    }
 }
