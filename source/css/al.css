@@ -351,7 +351,7 @@
 
 .worksheets .pagination{
     bottom: -10px;
-    left: 37%;
+    left: auto;
 }
 .icon-left{
     display: inline-block;
@@ -452,7 +452,7 @@
     right: 0;
 }
 .wicro_course .dis_main ul li{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .ma-b15{
     margin-bottom: 15px;
@@ -463,6 +463,7 @@
 
 .course_resource .pagination ,.digitization_course .pagination{
     bottom:-15px;
+    left: auto;
 }
 
 .course_head{
@@ -553,9 +554,11 @@
     /*background-size:100%100%;*/
 
 /*}*/
-/*.course_table{*/
-    /*padding: 3% 5%;*/
-/*}*/
+.course_table{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .course_table table{
     width: 100%;
 }
@@ -634,7 +637,7 @@
     /*马上学习*/
 .learn_content{
     position: absolute;
-    width: 65%;
+    width: 70%;
     height: 75%;
     display: flex;
 
@@ -945,6 +948,12 @@
 .empty{
     display: inline-block;
     width: 32px;
+}
+
+.resource_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media(min-height: 900px){

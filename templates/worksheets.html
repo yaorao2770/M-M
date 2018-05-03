@@ -16,37 +16,43 @@
             </span>
             <i class="icon-right hover" ng-click="num=num+1"></i>
         </div>
-        <div class="dig_head">
-            <ul >
-                <li ng-repeat="item in menulist" >
-                    <a ng-bind="item" class="hover" ng-class="{active:isSelect==$index}" ng-click="selectCourse($index)"></a>
-                </li>
-            </ul>
-        </div>
+        <!--<div class="dig_head">-->
+            <!--<ul >-->
+                <!--<li ng-repeat="item in menulist" >-->
+                    <!--<a ng-bind="item" class="hover" ng-class="{active:isSelect==$index}" ng-click="selectCourse($index)"></a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
         <div class="course_table" ng-show="isSelect==0">
             <table>
                 <thead>
-                <th>序号</th>
+                <th>课时序号</th>
                 <th >课程名称</th>
-                <th>作业类别</th>
-                <th>提交戳点</th>
-                <th>作业状态</th>
-                <th>完成时间</th>
+                <th>要求完成日期</th>
+                <th>完成状态</th>
+                <!--<th>作业类别</th>-->
+
+
+                <th>实际完成日期</th>
                 <th >操作</th>
+                <th>测评结果</th>
                 </thead>
                 <tbody>
                 <tr ng-repeat="item in workList track by $index">
                     <td>{{$index+1}}</td>
                     <td class="alignleft">{{item.name}}</td>
-                    <td>{{item.workType}}</td>
                     <td>{{item.submitTime}}</td>
                     <td>{{item.status==0?'未完成':'已完成'}}</td>
+                    <!--<td>{{item.workType}}</td>-->
+
+
                     <td>{{item.complateTime}}</td>
                     <td>
                         <button class="pubBtn"
                            ng-click="goLearning()"
                           ng-class="{0:'backFF9932k',1:'back00CD66 '}[item.status]">{{item.status==0?'马上去完成':'已完成学习'}}</button>
                     </td>
+                    <td>8/10</td>
                 </tr>
                 </tbody>
 
