@@ -1,41 +1,8 @@
-/*@font-face*/
-/*{*/
-    /*font-family: myFirstFont;*/
-    /*src: url('../../fonts/迷你简卡通.TTF')*/
-
-
-/*}*/
-
-/*body{*/
-
-
-
-    /*/!*background: url("../../images/shouye_bg.png");*!/*/
-    /*background-attachment:fixed;*/
-
-    /*background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-webkit-background-size: cover;*/
-
-    /*font-family:"Microsoft YaHei" ! important;*/
-
-
-
-/*}*/
-
 .header{
-    /*overflow: hidden;*/
-    /*float: left;
-
-    padding: 0 17%;
-    margin: auto;
-    background-color:transparent;*/
-
     background-color: transparent;
     position: relative;
     z-index: 999;
-    width: 60%;
-
+    width: 70%;
     margin: 0 auto;
 }
 

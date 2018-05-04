@@ -17,7 +17,8 @@
 }
 .self-evaluate>.wrapper{
     padding-top: 115px;
-    width: 1000px;
+    width: 70%;
+    /*width: 1000px;*/
     margin: 0 auto;
 }
 .self-evaluate .split-line{
@@ -60,11 +61,10 @@
     margin-top: 40px;
 }
 .my-wrapper{
-    width: 1000px;
+    width: 70%;
     margin:0 auto;
     position: relative;
     padding-top: 130px;
-    /*padding-bottom: 28px;*/
 }
 
 .teacher-wrap{
@@ -322,9 +322,6 @@
 .interactive_watch .video-btn{
     color: #fff;
     text-align: center;
-    position: absolute;
-    bottom: 30px;
-    left: 84px;
 }
 .interactive_watch .color-pot:nth-of-type(1){
     margin-top: 30px;
@@ -358,7 +355,8 @@
 }
 .interactive_watch .wrap-house{
     float: left;
-    width: 324px;
+    width: 32%;
+    /*width: 324px;*/
     height: 198px;
     background: url(../../images/interactive/wrap-house.png);
     background-size: 100% 100%;
@@ -383,9 +381,8 @@
 /* 互动学习 */
 .interactive{
     position: relative;
-    width: 900px;
+    width: 70%;
     margin:0 auto;
-    /*padding-bottom: 28px;*/
 }
 
 .interactive-wrap{
@@ -486,19 +483,98 @@
     left: 400px;
     top: 72px;
 }
-
+@media (max-width:1024px){
+    .common-title{
+        width: 170px!important;
+        height: auto!important;
+    }
+    .back{
+        width: 150px!important;
+    }
+    .interactive_watch .color-pot{
+        margin-top: 9px;
+    }
+    .interactive_watch .color-pot:nth-of-type(1){
+        margin-top: -22px;
+    }
+    .intera-footer-li{
+        font-size:14px;
+    }
+    .intera-footer-title{
+        font-size:16px;
+    }
+    .interactive_watch .wrap-house{
+        width: 32%;
+    }
+    .intera-footer-scroller{
+        margin-right: 15px;
+    }
+    .interactive_watch .video{
+        width: 350px;
+        height: 262.5px;
+    }
+    .interactive_watch .canlendar{
+        width: 293px;
+    }
+    .interactive_watch .video-btn{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    .interactive_watch .footer{
+        margin-top: 18px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .mutual-evaluate .avater-wrap>span{
+        left: 200px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(2){
+        left: 282px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(3){
+        left: 367px;
+    }
+    .mutual-evaluate .logs{
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .mutual-cards{
+        height: 210px;
+    }
+    .mutual-evaluate .zan{
+        width: 138px;
+    }
+    .mutual-evaluate .zan-total{
+        font-size: 20px;
+        width: 86px;
+    }
+    .teacher-evaluate .list-item p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .teacher-evaluate .list-title{
+        font-size: 21px;
+    }
+    .intera-nav{
+        width: 120px;
+        font-size: 16px;
+    }
+    .intera-nav:nth-of-type(2){
+        left: 198px;
+    }
+    .intera-nav:nth-of-type(3){
+        left: 342px;
+    }
+}
 @media (max-width:1366px){
     .evaluate{
         background-size: 100%;
-    }
-    .interactive{
-        width: 900px;
     }
     .interactive-wrap{
         width: 100%;
         height: 510px;
         float: left;
-        /*margin-top: 35px;*/
     }
     .intera-title{
         font-size: 40px;
@@ -560,7 +636,7 @@
     }
     .self-evaluate>.wrapper{
         padding-top: 127px;
-        width: 900px;
+        /*width: 900px;*/
         position: relative;
         padding-bottom: 13px;
     }
@@ -598,20 +674,19 @@
         margin-bottom: -10px;
     }
     .my-wrapper{
-        width: 900px;
-        padding:130px 0 17px 0;
+        padding-top: 130px;
     }
     .mutual-title{
         width: 210px;
         position: absolute;
     }
-    .mutual-evaluate .avater-wrap>span{
-        left: 250px;
-        font-size: 14px;
-    }
     .mutual-evaluate .avater-wrap img{
         width: 68px;
         cursor: pointer;
+    }
+    .mutual-evaluate .avater-wrap>span{
+        left: 250px;
+        font-size: 14px;
     }
     .mutual-evaluate .avater-wrap>span:nth-of-type(2){
         left: 345px;
