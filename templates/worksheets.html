@@ -39,7 +39,7 @@
                 </thead>
                 <tbody>
                 <tr ng-repeat="item in workList track by $index">
-                    <td>{{$index+1}}</td>
+                    <td>第{{$index+1}}课时</td>
                     <td class="alignleft">{{item.name}}</td>
                     <td>{{item.submitTime}}</td>
                     <td>{{item.status==0?'未完成':'已完成'}}</td>

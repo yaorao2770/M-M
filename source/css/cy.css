@@ -780,7 +780,7 @@
 .sheet-header{
     background: url('../../images/digitization_course/caidan.png');
     height: 200px;
-    width: 100px;
+    width: 12%;
     background-size: 100% 100%;
     padding-top: 60px;
     font-size: 14px;
@@ -802,8 +802,8 @@
     border: 8px solid #97C83E;
     background: #fff;
     border-radius: 40px;
-    width: 800px;
-    height: 480px;
+    width: 88%;
+    height: 100%;
     float: right;
     position: relative;
     padding: 30px 30px;

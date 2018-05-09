@@ -30,22 +30,30 @@ app.controller('course_resourcesCtrl', ['$scope','$state',function($scope,$state
          ];
 
     $scope.mainList= $scope.mainList1;
-    //
-    $scope.totalItems  = $scope.mainList1.length;
-    $scope.currentPage = 1;
-    $scope.itemsPerPage = 8;
-    $scope.maxSize = 5;
 
-    $scope.setPage = function (pageNo) {
-        $scope.currentPage = pageNo;
-    };
-    $scope.pageChanged = function() {
-        $log.log('Page changed to: ' + $scope.currentPage);
-    };
-    //
 
+    $scope.res_menuList=['菜单一','菜单二','菜单三','菜单四'];
+
+    $scope.isSelectmenu=0;
+
+    $scope.selectMenu=function($index){
+        $scope.isSelectmenu=$index;
+    }
+    //
+    //$scope.totalItems  = $scope.mainList1.length;
+    //$scope.currentPage = 1;
+    //$scope.itemsPerPage = 8;
+    //$scope.maxSize = 5;
+    //
+    //$scope.setPage = function (pageNo) {
+    //    $scope.currentPage = pageNo;
+    //};
+    //$scope.pageChanged = function() {
+    //    $log.log('Page changed to: ' + $scope.currentPage);
+    //};
+    ////
+    //
     $scope.resource_detail=function(index){
-
 
         $state.go('main.course_resources_detail',{id:index});
     }

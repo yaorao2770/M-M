@@ -15,6 +15,20 @@
     margin-left: -50px;
 }
 
+
+.header_font{
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    width: 245px;
+    height: 80px;
+    margin-left: -50px;
+    line-height: 80px;
+    font-size: 24px;
+    color: #CF0B64;
+    /*border: 3px solid #fff;*/
+    text-border: 3px solid #fff;
+}
 .header >ul{
     float: right;
 
@@ -170,7 +184,7 @@
 .js_content{
     /*position: absolute;*/
     position: relative;
-    top:40%;
+    top:34%;
     width: 42%;
     margin: auto;
     line-height:1.5;
@@ -187,13 +201,13 @@
     font-size: 14px;
     position: absolute;
     right: 27%;
-    top:27.5%
+    top:24.5%
 }
 .terrace_word{
     font-size: 14px;
     position: absolute;
     right: 27%;
-    top:32%
+    top:29%
 }
 
 .img_right{
@@ -501,26 +515,24 @@
     background: #fff;
     border: none;
 }
-/*.operate_ul li:nth-child(1){*/
-    /*background: url("../../images/shangchuan.png")no-repeat;*/
-    /*background-size:100%100%;*/
+.res_menu{
+    display: flex;
+    padding: 0.5rem 1rem;
+}
 
-/*}*/
-/*.operate_ul li:nth-child(2){*/
-    /*background: url("../../images/xiazai.png")no-repeat;*/
-    /*background-size:100%100%;*/
+.res_menu li{
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 3px 0.5rem;
+}
 
-/*}*/
-/*.operate_ul li:nth-child(3){*/
-    /*background: url("../../images/shanchu.png")no-repeat;*/
-    /*background-size:100%100%;*/
+.res_menu .active{
+    background:#F3AF66 ;
+    color: #fff;
 
-/*}*/
-/*.operate_ul li:nth-child(4){*/
-    /*background: url("../../images/xinjian.png")no-repeat;*/
-    /*background-size:100%100%;*/
+}
 
-/*}*/
 .course_table{
    display: flex;
     align-items: center;
@@ -626,28 +638,40 @@
 /*}*/
 .learn_left{
 
-    background: url("../../images/digitization_course/mulu.png")no-repeat;
-    background-size:100%100%;
-    width: 12%;
+    /*background: url("../../images/digitization_course/mulu.png")no-repeat;*/
+    /*background-size:100%100%;*/
+    width: 10%;
+    margin-right: 2%;
     display: flex;
     justify-content: center;
-    padding-top: 12%;
+    padding-top: 3%;
+    border: 3px solid #A5E24D;
+    background: #fff;
+    border-radius: 100px;
+    margin-top: 5%;
+    height:75%
 }
 
 .learn_left_ul li{
     text-align: center;
     padding: 5px 0;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .learn_left_ul li span{
     display: inline-block;
-
+    padding: 0 5px;
+    width: 100%;
     border-bottom: 2px solid transparent;
+    background: #DCDCDC;
+    border-radius: 3px;
+
 }
 
 .learn_left_ul li .active{
-    border-bottom: 2px solid #fff;
+    /*border-bottom: 2px solid #fff;*/
+    background: #A5E24D;
+    color: #fff;
 }
 .learn_right{
     margin-top: 5%;
@@ -767,10 +791,45 @@
     margin-right: 4%;
 }
 
+.span_xiang{
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+}
+
+/*.span_xiang img{*/
+    /*display: inline-block;*/
+    /*width: 24px;*/
+    /*height: 24px;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+.link_img{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
 .span_cha{
     position: absolute;
     bottom: -20px;
     left: 50px;
+}
+
+.img_cha1,.img_cha2{
+    width: 24px !important;
+    height: 24px !important;
+    position: absolute;
+}
+
+.img_cha1{
+    left: 30%;
+    top:25%
+}
+
+.img_cha2{
+    right: 5%;
+    top:30%;
 }
 .span_yi{
     position: absolute;
@@ -778,6 +837,11 @@
     right: 100px;
 }
 
+.span_xue{
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+}
 .w85{
     width: 85%;
 }
@@ -919,13 +983,19 @@
 
 .resource_content{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
+.resource_content_ul li{
+   float: left;
+    width: 24%;
+    margin-right: 1%;
+    text-align: center;
+}
 @media(min-height: 900px){
     .js_content{
-        top:42%
+        top:38%
 }
 
     .head_img{

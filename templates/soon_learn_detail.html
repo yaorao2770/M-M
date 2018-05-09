@@ -1,10 +1,10 @@
 <div class="worksheets h100">
-    <div class="my-wrapper">
+    <div class="learn_content">
         <ul class="sheet-header">
             <li ng-repeat="item in menulist" class="sheet-header-item">
                 <a ng-bind="item" ng-class="{sheetActive:isSelect==$index}" ng-click="selectCourse($index)"></a>
             </li>
-    </ul>
+        </ul>
         <div class="sheet-content">
             <span class="sheet-course-menu">第{{isSelect+1}}课时 测量仓鼠体重</span>
             <div ng-show="course10">
@@ -16,33 +16,33 @@
                     <li>D . 电子天平</li>
                     <li>E . 天平秤</li>
                     <li>F . 吊钩秤</li>
-                 <div class="cl"></div>
+                    <div class="cl"></div>
                 </ul>
                 <ul class='sheet-imgs'>
                     <li>
-    <img ng-src="images/digitization_course/sky.png">
-        <p>（ <input type="text" ng-model='balance.type1'>）</p>
-        </li>
+                        <img ng-src="images/digitization_course/sky.png">
+                        <p>（ <input type="text" ng-model='balance.type1'>）</p>
+                    </li>
                     <li>
-        <img ng-src="images/digitization_course/frog.png">
-        <p>（ <input type="text" ng-model='balance.type2'>）</p>
-        </li>
+                        <img ng-src="images/digitization_course/frog.png">
+                        <p>（ <input type="text" ng-model='balance.type2'>）</p>
+                    </li>
                     <li>
-<img ng-src="images/digitization_course/gril.png">
-<p>（ <input type="text" ng-model='balance.type3'>）</p>
-</li>
+                        <img ng-src="images/digitization_course/gril.png">
+                        <p>（ <input type="text" ng-model='balance.type3'>）</p>
+                        </li>
                     <li>
-<img ng-src="images/digitization_course/elephant.png">
-<p>（ <input type="text" ng-model='balance.type4'>）</p>
-</li>
+                        <img ng-src="images/digitization_course/elephant.png">
+                        <p>（ <input type="text" ng-model='balance.type4'>）</p>
+                        </li>
                     <li>
-<img ng-src="images/digitization_course/book.png">
-<p>（ <input type="text" ng-model='balance.type5'>）</p>
-</li>
+                        <img ng-src="images/digitization_course/book.png">
+                        <p>（ <input type="text" ng-model='balance.type5'>）</p>
+                        </li>
                     <li>
-<img ng-src="images/digitization_course/jewel.png">
-<p>（ <input type="text" ng-model='balance.type6'>）</p>
-</li>
+                        <img ng-src="images/digitization_course/jewel.png">
+                        <p>（ <input type="text" ng-model='balance.type6'>）</p>
+                        </li>
                     <div class="cl"></div>
                 </ul>
             </div>
@@ -93,24 +93,24 @@
                 </table>
             </div>
             <div ng-show="course21">
-<p>给以下测量仓鼠体重的操作步骤排序（填编号）。</p>
-<ul class="sheet-steps">
-<li>A ．将仓鼠放进隔离笼内。</li>
-<li>B ．带上两层手套。</li>
-<li>C ．将仓鼠和隔离笼的总重量减去隔离笼的重量，得出仓鼠的体重。</li>
-<li>D ．将仓鼠移出隔离笼。  </li>
-<li>E ．测量仓鼠和隔离笼的总重量。</li>
-<li>F ．测量隔离笼的重量。</li>
-</ul>
-<div>
-（ <input type="text" ng-model='balance.type7'>）→
-（ <input type="text" ng-model='balance.type8'>）→
-（ <input type="text" ng-model='balance.type9'>）→
-（ <input type="text" ng-model='balance.type10'>）→
-（ <input type="text" ng-model='balance.type11'>）→
-（ <input type="text" ng-model='balance.type12'>）
-</div>
-</div>
+                <p>给以下测量仓鼠体重的操作步骤排序（填编号）。</p>
+                <ul class="sheet-steps">
+                    <li>A ．将仓鼠放进隔离笼内。</li>
+                    <li>B ．带上两层手套。</li>
+                    <li>C ．将仓鼠和隔离笼的总重量减去隔离笼的重量，得出仓鼠的体重。</li>
+                    <li>D ．将仓鼠移出隔离笼。  </li>
+                    <li>E ．测量仓鼠和隔离笼的总重量。</li>
+                    <li>F ．测量隔离笼的重量。</li>
+                </ul>
+                <div>
+                    （ <input type="text" ng-model='balance.type7'>）→
+                    （ <input type="text" ng-model='balance.type8'>）→
+                    （ <input type="text" ng-model='balance.type9'>）→
+                    （ <input type="text" ng-model='balance.type10'>）→
+                    （ <input type="text" ng-model='balance.type11'>）→
+                    （ <input type="text" ng-model='balance.type12'>）
+                </div>
+            </div>
             <div class="sheet-footer">
                 <span ng-click="nextPage()" class="page-btn fl" ng-show="course10 || course20">下一页</span>
                 <span ng-click="previousPage()" class="page-btn fl" ng-show="course11 || course21">上一页</span>
@@ -118,6 +118,6 @@
                     <div class="cl"></div>
             </div>
         </div>
-            <div class="cl"></div>
-        </div>
+        <div class="cl"></div>
+    </div>
 </div>
