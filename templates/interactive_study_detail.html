@@ -1,0 +1,47 @@
+<div class="mutual-evaluate evaluate h100">
+	<div class="my-wrapper">
+		<img ng-src="images/interactive/biaobi2.png" class="title common-title">
+		<span class="back inline-btn" ng-click="backInteractive()">返回</span>
+		<div class="cl"></div>
+		<div class="mutual-cards">
+			<span class="avater-wrap">
+				<span ng-repeat="item in [1,2,3]">
+					<img ng-src="{{imgUrlActive}}" ng-click="clickImg($index)" ng-show="curNum == $index">
+					<img ng-src="{{imgUrl}}" ng-click="clickImg($index)" ng-show="curNum != $index">
+					<span class="text-wrap">
+						<span>A组</span><br>
+						<span>黄小朋友</span>
+					</span>
+					<p class="cl"></p>
+				</span>
+				<div class="cl"></div>
+			</span>
+			<ul>
+				<li ng-repeat="item in [1,2,3]" class="logs">
+					<span class="bold">2018年3月13日&nbsp;&nbsp;&nbsp;&nbsp;今天，我们小组的仓鼠胃口似乎特别好……</span>
+					<span class="fr">
+						<i class="fa fa-thumbs-up thumbs"></i>
+						<span>6</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul class="zan-log-wrap">
+				<img ng-src="images/interactive/jiangpai.png" class="jiangpai">
+				<span class="zan-title">我获得的点赞数</span>
+				<span class="get-more">查看更多</span>
+				<li ng-repeat="item in [1,2,3]" class="logs footer-li">
+					<span class="bold">
+						黄小朋友
+						<i class="fa fa-thumbs-up thumbs"></i>
+						赞了 &nbsp;&nbsp; 
+						"今天， 我们小组的……"
+					</span>
+					<span class="fr bold">2018-3-13</span>
+				</li>
+			</ul>
+			<div class="cl"></div>
+		</div>
+	</div>
+</div>

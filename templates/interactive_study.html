@@ -1,60 +1,58 @@
-<div class="evaluate h100">
-	<div class="interactive">
-		<img ng-src="images/interactive/biaobi2.png" class="title common-title">
-		<img ng-src="images/interactive/interactive-wrap.png" class="interactive-wrap">
-		<div class="cl"></div>
-		<div class="intera-cards-bg">
-			<img ng-src="images/interactive/interactive-cards-bg.png">
-			<span>我要发帖</span>
-		</div>
-		<div class="intera-content">
-			<div class="intera-nav">
-				<img ng-src="images/interactive/interactive-bar.png" alt="最新更新">
-				<img ng-src="images/interactive/arrow-down.png" class="arrow">
-				<span>最新更新</span>
-			</div>
-			<div class="intera-nav">
-				<img ng-src="images/interactive/interactive-bar.png" alt="默认排序">
-				<img ng-src="images/interactive/arrow-down.png" class="arrow">
-				<span>默认排序</span>
-			</div>
-			<div class="intera-nav">
-				<img ng-src="images/interactive/interactive-bar.png" alt="精华">
-				<img ng-src="images/interactive/arrow-down.png" class="arrow">
-				<span>精华</span>
-			</div>
-			<ul class="intera-question">
-				<li ng-repeat="item in [1,2,3]">
-					<span class="img-wrap">
-						<img ng-src="images/interactive/avater-yellow.png">
-						<span>小朋友</span>
-					</span>
-					<span class="text">仓鼠喂养大全，让你的仓鼠健康活泼，快来学习吧~</span>
-					<span class="data-icon">
-						<span class="date">2018-3-28</span><br>
-						<span class="icons">
-							<i class="fa fa-heart"></i>
-							<span>12</span>
-							<i class="fa fa-commenting"></i>
-							<span>13</span>
-							<i class="fa fa-thumbs-up"></i>
-							<span>14</span>
+<div class="evaluate interactive h100">
+		<div class="my-wrapper">
+			<img ng-src="images/interactive/biaobi2.png" class="title common-title">
+			<img ng-src="images/interactive/review.png" class="review" ng-click="evaluateDetail()">
+			<span class="inline-btn card">我要发帖</span>
+			<div class="cl"></div>
+			<div class="intera-content">
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="最新更新">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>最新更新</span>
+				</div>
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="默认排序">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>默认排序</span>
+				</div>
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="精华">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>精华</span>
+				</div>
+				<ul class="intera-question">
+					<li ng-repeat="item in [1,2,3]">
+						<span class="img-wrap">
+							<img ng-src="images/interactive/avater-yellow.png">
+							<span>小朋友</span>
 						</span>
-					</span>
-					<img ng-src="images/interactive/split-line-yellow.png" class="split-line">
-				</li>
-			</ul>
-	        <ul uib-pagination 
-	            class="pagination-sm"
-	            total-items="totalItems"
-	            items-per-page = "itemsPerPage"
-	            num-pages="numPages" 
-	            force-ellipses="true" 
-	            ng-model="currentPage"
-	            ng-change="changePage()"
-	            max-size="maxSize" 
-	            previous-text="&lsaquo;" 
-	            next-text="&rsaquo;"></ul>
+						<span class="text">仓鼠喂养大全，让你的仓鼠健康活泼，快来学习吧~</span>
+						<span class="data-icon">
+							<span class="date">2018-3-28</span><br>
+							<span class="icons">
+								<i class="fa fa-heart"></i>
+								<span>12</span>
+								<i class="fa fa-commenting"></i>
+								<span>13</span>
+								<i class="fa fa-thumbs-up"></i>
+								<span>14</span>
+							</span>
+						</span>
+						<img ng-src="images/interactive/split-line-yellow.png" class="split-line">
+					</li>
+				</ul>
+		        <ul uib-pagination 
+		            class="pagination-sm"
+		            total-items="totalItems"
+		            items-per-page = "itemsPerPage"
+		            num-pages="numPages" 
+		            force-ellipses="true" 
+		            ng-model="currentPage"
+		            ng-change="changePage()"
+		            max-size="maxSize" 
+		            previous-text="&lsaquo;" 
+		            next-text="&rsaquo;"></ul>
+			</div>
 		</div>
 	</div>
 </div>

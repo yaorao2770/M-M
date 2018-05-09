@@ -1,27 +1,58 @@
 <div class="self-evaluate evaluate h100">
 	<div class="wrapper">
 		<img ng-src="images/evaluate/self-title.png" class="inline-b title">
-		<img ng-src="images/evaluate/back.png" class="inline-b back">
+		<span class="inline-btn back">返回</span>
+		<div class="subtitle-parent">
+			<span ng-click="isShow = !isShow" class="self-evaluate-subtitle">第{{curClasses}}课时自评问卷 
+				<i class="fa fa-caret-down" ng-show="!isShow"></i>
+				<i class="fa fa-caret-up" ng-show="isShow"></i>
+			</span>
+			<ul ng-if="isShow" class="self-evaluate-subtitlewrap">
+				<li ng-repeat="item in classes" ng-class="item == curLi ? 'FACCD' : ''" ng-click="clickClasses(item)">
+				第{{item}}课时自评问卷</li>
+			</ul>
+		</div>
 		<div class="cl"></div>
-		<img ng-src="images/evaluate/split-line-fff.png" class="split-line">
-		<ul class="self-evaluate-lists">
-			<li ng-repeat="item in [1,2,3,4,5]">
-				<img ng-src="images/evaluate/self-cards.png">
-				<span class="list-title">
-					<span>第</span>
-					<span ng-bind="$index+1"></span>
-					<span>题</span>
-				</span>
-				<span class="content">
-					<ul class="cards-text">
-						<li class="first">1. 在参观小仓鼠实验室的测试中，我做对了（）道题。</li>
-						<li>A &nbsp;&nbsp; 4道</li>
-						<li>B &nbsp;&nbsp; 1-3道</li>
-						<li>C &nbsp;&nbsp; 0道</li>
-					</ul>
-				</span>
-			</li>
-			<p class="cl"></p>
-		</ul>
+		<div class="self-evaluate-lists">
+			<label>1. 你目前就读的年纪是？</label>
+			<ul class="q1 q">
+				<li ng-repeat="item in ages">
+					<label>
+						<input type="radio" name="ages" ng-model='selfEvalute.q1'>
+						小学{{item}}年纪
+					</label>
+				</li>
+				<div class="cl"></div>
+			</ul>
+			<label>2. 你所在的学校属于？</label>
+			<ul class="q1 q">
+				<li>
+					<label>
+						<input type="radio" name="q2" ng-model='selfEvalute.q1'>
+						公办学校
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="radio" name="q2" ng-model='selfEvalute.q1'>
+						民办学校
+					</label>
+				</li>
+				<div class="cl"></div>
+			</ul>
+			<label>3. 截止到目前，你上STEM课有多长时间了？</label>
+			<ul class="q3 q">
+				<li ng-repeat='item in times'>
+					<label>
+						<input type="radio" name="q3" ng-model='selfEvalute.q1'>
+						{{item}}
+					</label>
+				</li>
+				<div class="cl"></div>
+			</ul>
+			<div class="align">
+				<span class="save-btn" ng-click="save()">提交</span>
+			</div>
+		</div>
 	</div>
 </div>

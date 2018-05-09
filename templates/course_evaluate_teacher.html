@@ -1,27 +1,45 @@
 <div class="teacher-evaluate evaluate h100">
 	<div class="my-wrapper">
-		<img ng-src="images/evaluate/teacher.png" class="teacher-wrap">
+		<img ng-src="images/evaluate/class-total.png" class="teacher-wrap">
 		<div class="cl"></div>
-		<img ng-src="images/evaluate/teacher-title.png" class="title common-title">
-		<img ng-src="images/evaluate/back.png" class="back">
-		<ul class="lists">
-			<li ng-repeat="item in [1,2,3]" class="list-item">
-				<h2 class='list-title'>第{{$index+1}}课时 &nbsp;&nbsp; 测量仓鼠体重</h2>
-				<p>
-					教师评价： 你的任务完成得很棒！收集到了5种测量的方法，并且给这5中方法进行了优势排序，说明了你信息收集、整理的能力很强！希望你在小组合作中在努力了！
-				</p>
-			</li>
-		</ul>
-		<ul uib-pagination
-			class="pagination-sm teacher-pagination"
-			total-items="totalItems"
-			items-per-page = "itemsPerPage"
-			num-pages="numPages"
-			force-ellipses="true"
-			ng-model="currentPage"
-			ng-change="changePage()"
-			max-size="maxSize"
-			previous-text="&lsaquo;"
-			next-text="&rsaquo;"></ul>
+		<div class="self-evaluate-lists">
+			<table width="100%" class="teacher-table">
+				<tr>
+					<th>课时序号</th>
+					<th>自评</th>
+					<th>互评</th>
+					<th>师评</th>
+					<th>总分</th>
+				</tr>
+				<tr ng-repeat="item in entrys">
+					<td>第{{$index+1}}课时测量仓鼠的体重</td>
+					<td ng-show="item.self">{{item.self}}</td>
+					<td ng-show="item.mutal">{{item.mutal}}</td>
+					<td ng-show="item.teacher">{{item.teacher}}</td>
+
+					<td ng-show="!item.self">
+						<button class="write-now" ng-click="writeNow()">马上评价</button>
+					</td>
+					<td ng-show="!item.mutal">
+						<button class="write-now" ng-click="writeNow()">马上评价</button>
+					</td>
+					<td ng-show="!item.teacher">
+						<button class="write-now" ng-click="writeNow()">马上评价</button>
+					</td>
+					<td>{{item.total}}</td>
+				</tr>
+			</table>
+			<ul uib-pagination
+				class="pagination-sm teacher-pagination"
+				total-items="totalItems"
+				items-per-page = "itemsPerPage"
+				num-pages="numPages"
+				force-ellipses="true"
+				ng-model="currentPage"
+				ng-change="changePage()"
+				max-size="maxSize"
+				previous-text="&lsaquo;"
+				next-text="&rsaquo;"></ul>
+		</div>
 	</div>
 </div>

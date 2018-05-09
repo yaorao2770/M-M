@@ -1,66 +1,110 @@
 <div class="mutual-evaluate evaluate h100">
 	<div class="my-wrapper">
-		<img ng-src="images/evaluate/guancharizhi.png" class="mutual-title common-title">
-		<span class="avater-wrap">
-			<span ng-repeat="item in [1,2,3]">
-				<img ng-src="{{imgUrlActive}}" ng-click="clickImg($index)" ng-show="curNum == $index">
-				<img ng-src="{{imgUrl}}" ng-click="clickImg($index)" ng-show="curNum != $index">
-				<span>A组</span><br>
-				<span>黄小朋友</span>
+		<img ng-src="images/evaluate/huping.png" class="mutual-title common-title">
+		<span class="back inline-btn">返回</span>
+		<div class="subtitle-parent">
+			<span ng-click="isShow = !isShow" class="self-evaluate-subtitle">第{{curClasses}}课时互评打分 
+				<i class="fa fa-caret-down" ng-show="!isShow"></i>
+				<i class="fa fa-caret-up" ng-show="isShow"></i>
 			</span>
-		</span>
-		<img ng-src="images/evaluate/back.png" class="back">
-		<img ng-src="images/evaluate/mutual-cards.png" class="mutual-cards">
-		<div class="cl"></div>
-		<div class="blue-wrap">
-			<span class="class-container fl">
-				<img ng-src="images/evaluate/class-wrap.png" class="class-wrap">
-				<span class="text">第3课  测量仓鼠体重</span>
-				<i class="fa fa-arrow-circle-o-left left"></i>
-				<i class="fa fa-arrow-circle-o-right right"></i>
-			</span>
-			<span class="fr relative">
-				<img ng-src="images/evaluate/class-wrap.png" class="calendar-wrap">
-				<span class="text">2018-3-12</span>
-				<i class="fa fa-clock-o"></i>
-			</span>
-			<div class="cl"></div>
-		</div>
-		<ul class="logs-wrap">
-			<li ng-repeat="item in [1,2,3]" class="logs">
-				<img ng-src="images/evaluate/dot.png" class="dot">
-				<span class="bold">2018年3月13日&nbsp;&nbsp;&nbsp;&nbsp;今天，我们小组的仓鼠胃口似乎特别好……</span>
-				<span class="fr">
-					<i class="fa fa-thumbs-up thumbs"></i>
-					<span>6</span>
-				</span>
-			</li>
-		</ul>
-		<div class="footer">
-			<span class="relative">
-				<img ng-src="images/evaluate/zan-wrap.png" class="zan">
-				<span class="zan-total">
-					<span>我的</span><br>
-					<span>点赞数</span><br>
-					<i class="fa fa-thumbs-up thumbs thumbs-left"></i>
-					<span>88</span>
-					<i class="fa fa-thumbs-up thumbs thumbs-rotate"></i>
-				</span>
-			</span>
-			<ul class="zan-log-wrap">
-				<li ng-repeat="item in [1,2,3]" class="logs">
-					<img ng-src="images/evaluate/dot.png" class="dot">
-					<span class="bold">
-						黄小朋友
-						<i class="fa fa-thumbs-up thumbs"></i>
-						赞了 &nbsp;&nbsp; 
-						"今天， 我们小组的……"
-					</span>
-					<span class="fr bold">2018-3-13</span>
-				</li>
-				<li class="get-more">查看更多</li>
+			<ul ng-if="isShow" class="self-evaluate-subtitlewrap">
+				<li ng-repeat="item in classes" ng-class="item == curLi ? 'FACCD' : ''" ng-click="clickClasses(item)">
+				第{{item}}课时互评打分</li>
 			</ul>
-			<div class="cl"></div>
+		</div>
+		<div class="cl"></div>
+		<div class="mutual-container self-evaluate-lists">
+			<label>陈晓静	1组奥利奥组</label>
+			<table border="1" class="align" width="100%">
+				<tr>
+		        	<th rowspan="2" colspan='2'>活动名称</th> 
+		        	<th colspan="3">评价（仓鼠币）</th>
+		        </tr>
+		        <tr> 
+		        	<th>自评</th> 
+		        	<th>互评</th> 
+		        	<th>师评</th>  
+		        </tr>
+		        <tr>
+		        	<td  rowspan="3">测量仓鼠的体重</td> 
+		        	<td>作业一</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td>  
+		        </tr>
+		        <tr> 
+		        	<td>作业二</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr> 
+		        	<td>作业三</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td>总分</td>
+		        	<td>15</td>
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td colspan="2">教师评语</td>
+		        	<td colspan="3">
+		        		<textarea></textarea>
+		        	</td>
+		        </tr>
+			</table>
+			<label class="top20">牛小二	2组奥利奥组</label>
+			<table border="1" class="align" width="100%">
+				<tr>
+		        	<th rowspan="2" colspan='2'>活动名称</th> 
+		        	<th colspan="3">评价（仓鼠币）</th>
+		        </tr>
+		        <tr> 
+		        	<th>自评</th> 
+		        	<th>互评</th> 
+		        	<th>师评</th>  
+		        </tr>
+		        <tr>
+		        	<td  rowspan="3">测量仓鼠的体重</td> 
+		        	<td>作业一</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td>  
+		        </tr>
+		        <tr> 
+		        	<td>作业二</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr> 
+		        	<td>作业三</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td>总分</td>
+		        	<td>15</td>
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td colspan="2">教师评语</td>
+		        	<td colspan="3">
+		        		<textarea></textarea>
+		        	</td>
+		        </tr>
+			</table>
+			<div class="align top20">
+				<span class="save-btn" ng-click="save()">提交</span>
+			</div>
 		</div>
 	</div>
 </div>
