@@ -47,6 +47,17 @@
 						}
 					})
 
+					.state('main.interactive_study_detail', {
+						url: '^/interactive_study_detail',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_study_detail.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
+
 					//互动学习  -- 仓鼠观察
 					.state('main.interactive_watch', {
 						url: '^/interactive_watch',
@@ -87,6 +98,15 @@
 						views: {
 							'content@main': {
 								templateUrl: 'templates/course_evaluate_teacher.html',
+								controller: 'course_evaluateCtrl'
+							}
+						}
+					})
+					.state('main.teacher_evaluate_write', {
+						url: '^/teacher_evaluate_write',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/course_evaluate_teacher_write.html',
 								controller: 'course_evaluateCtrl'
 							}
 						}
@@ -160,7 +180,6 @@
 
 
 					//课程资源查看
-
 					.state('main.course_resources_detail', {
 						url: '^/course_resources_detail/:id',
 						views: {

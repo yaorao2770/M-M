@@ -79,7 +79,9 @@ button[disabled], html input[disabled]{
 .relative{
   position: relative;
 }
-
+.align{
+  text-align: center;
+}
 input:focus{ outline:none; }
 
 .colorRed{
@@ -126,4 +128,7 @@ input:focus{ outline:none; }
 
 .pagination-sm > li > a{
   padding: 3px 10px;
+}
+.none{
+  display: none;
 }

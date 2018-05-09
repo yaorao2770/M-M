@@ -1,0 +1,63 @@
+<div class="mutual-evaluate evaluate h100">
+	<div class="my-wrapper">
+		<img ng-src="images/evaluate/teacher-title.png" class="teacher-wrap">
+		<span class="inline-btn back" ng-click="teacherBack()">返回</span>
+		<div class="subtitle-parent">
+			<span ng-click="isShow = !isShow" class="self-evaluate-subtitle">第{{curClasses}}课时教师评价 
+				<i class="fa fa-caret-down" ng-show="!isShow"></i>
+				<i class="fa fa-caret-up" ng-show="isShow"></i>
+			</span>
+			<ul ng-if="isShow" class="self-evaluate-subtitlewrap">
+				<li ng-repeat="item in classes" ng-class="item == curLi ? 'FACCD' : ''" ng-click="clickClasses(item)">
+				第{{item}}课时教师评价</li>
+			</ul>
+		</div>
+		<div class="cl"></div>
+		<div class="mutual-container self-evaluate-lists">
+			<label>陈晓静	1组奥利奥组</label>
+			<table border="1" class="align" width="100%">
+				<tr>
+		        	<th rowspan="2" colspan='2'>活动名称</th> 
+		        	<th colspan="3">评价（仓鼠币）</th>
+		        </tr>
+		        <tr> 
+		        	<th>自评</th> 
+		        	<th>互评</th> 
+		        	<th>师评</th>  
+		        </tr>
+		        <tr>
+		        	<td  rowspan="3">测量仓鼠的体重</td> 
+		        	<td>作业一</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td>  
+		        </tr>
+		        <tr> 
+		        	<td>作业二</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr> 
+		        	<td>作业三</td> 
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td>总分</td>
+		        	<td>15</td>
+		        	<td><input type="text"></td> 
+		        	<td>5</td>  
+		        	<td><input type="text"></td> 
+		        </tr>
+		        <tr>
+		        	<td colspan="2">教师评语</td>
+		        	<td colspan="3">
+		        		<textarea></textarea>
+		        	</td>
+		        </tr>
+			</table>
+		</div>
+	</div>
+</div>

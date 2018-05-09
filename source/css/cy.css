@@ -8,57 +8,122 @@
     /*background-size: 100%;*/
 }
 .self-evaluate .title{
-    width: 250px;
+    width: 100px;
+}
+.inline-btn{
+    display: inline-block;
+    padding: 4px 30px;
+    border-radius: 51px;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
 }
 .evaluate .back{
     float: right;
-    width: 150px;
-    cursor: pointer;
+    background: #2FACCD;
+}
+.evaluate .card{
+    background: #F2B030;
+    position: absolute;
+    right: 30px;
+    top: 124px;
+}
+.intera-content{
+    width: 100%;
+    background: #fff;
+    border: 4px solid #F2B030;
+    border-radius: 42px;
+    padding: 20px;
+    height: 440px;
+    margin-top: 60px;
+    position: relative;
 }
 .self-evaluate>.wrapper{
     padding-top: 115px;
     width: 70%;
-    /*width: 1000px;*/
     margin: 0 auto;
 }
-.self-evaluate .split-line{
-    margin:0 0 20px 0;
-}
-.self-evaluate-lists>li{
+.subtitle-parent{
     float: left;
+    margin-left: 200px;
     position: relative;
-    margin:0 28px 28px 0;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
-.self-evaluate-lists>li:nth-of-type(3n+3){
-    margin-right: 0;
-}
-.self-evaluate-lists img{
-    width: 311px;
-    height: 220px;
-}
-.self-evaluate-lists .list-title{
+.interactive .review{
+    width: 200px;
+    left: 350px;
+    top: 120px;
+    cursor: pointer;
     position: absolute;
-    top: 3px;
-    left: 93px;
-    font-size: 25px;
-    color: #39B4D5;
 }
-.self-evaluate-lists .cards-text{
-    width: 260px;
+.self-evaluate-subtitle{
+    text-shadow: 2px 2px #2FACCD;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+.self-evaluate-subtitlewrap{
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 3px solid #2FACCD;
     position: absolute;
-    top: 55px;
-    font-weight: bold;
-    margin-left: 25px;
+    left: 120px;
+    width: 195px;
+    top: 39px;
 }
-.self-evaluate-lists .cards-text li{
-    height: 30px;
-    line-height: 30px;
+.self-evaluate-subtitlewrap li{
+    cursor: pointer;
+    line-height: 24px;
 }
-.self-evaluate-lists .cards-text li:not(.first){
+.FACCD{
+    color: #2FACCD;
+}
+.self-evaluate-lists{
+    margin-top: 45px;
+    width: 100%;
+    background: #fff;
+    border: 4px solid #2FACCD;
+    border-radius: 15px;
+    padding: 20px;
+}
+.mutual-container{
+    margin-top: 26px;
+    max-height: 470px;
+    min-height: 440px;
+    overflow: auto;
+    font-size: 14px;
+}
+.top20{
+    margin-top: 20px;
+}
+.mutual-container th{
+    background: #2FABCD;
+    color: #fff;
+    text-align: center;
+}
+.mutual-container input,.mutual-container textarea{
+    border-color: transparent;
+}
+.mutual-container textarea{
+    padding-top: 15px;
+    width: 100%;
+    height: 46px;
+}
+.self-evaluate-lists .q{
     margin-left: 20px;
+    border-bottom: 2px dashed #2FACCD;
+    margin-bottom: 18px;
+    padding-bottom: 9px;
 }
-.self-evaluate-lists .cards-text li:nth-of-type(2){
-    margin-top: 40px;
+.self-evaluate-lists .q1 li{
+    float: left;
+    margin-right: 30px;
+}
+.self-evaluate-lists li label{
+    cursor:pointer;
+    font-weight: normal;
 }
 .my-wrapper{
     width: 70%;
@@ -66,10 +131,13 @@
     position: relative;
     padding-top: 130px;
 }
-
-.teacher-wrap{
-    width: 100%;
-    height: 580px;
+.save-btn{
+    cursor: pointer;
+    background: #37BCDF;
+    display: inline-block;
+    padding: 4px 30px;
+    border-radius: 51px;
+    color: #fff;
 }
 .teacher-evaluate .back{
     position: absolute;
@@ -127,7 +195,6 @@
     width: 240px;
 }
 .mutual-evaluate .avater-wrap{
-    float: left;
     text-align: center;
 }
 .mutual-evaluate .avater-wrap>span{
@@ -147,8 +214,12 @@
 .mutual-cards{
     margin-top: -40px;
     float: left;
-    width: 1000px;
+    width: 100%;
     height: 290px;
+}
+.mutual-cards ul{
+    margin-top: 70px;
+    margin-left: 30px;
 }
 .mutual-evaluate .back{
     margin-right: 60px;
@@ -200,10 +271,6 @@
     height: 38px;
     line-height: 38px;
 }
-.mutual-evaluate .logs>img{
-    display: inline-block;
-    margin-right: 20px;
-}
 .mutual-evaluate .thumbs{
     color: #F8CF73;
     font-size: 20px;
@@ -212,13 +279,29 @@
 .mutual-evaluate .footer{
     padding-top: 15px;
 }
+.footer-li{
+    margin-left: 60px;
+}
+.zan-title{
+    margin-left: 60px;
+    font-size: 18px;
+    color: #F3B132;
+    font-weight: bold;
+}
+.jiangpai{
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    width: 70px;
+}
 .mutual-evaluate .zan-log-wrap{
     background: #fff;
     border-radius: 35px;
-    border: 7px solid #8FCFE3;
-    width: 80%;
+    border: 7px solid #F3B132;
+    width: 100%;
     float: right;
     padding: 20px;
+    position: relative;
 }
 .mutual-evaluate .zan{
     float: left;
@@ -229,6 +312,7 @@
     color: #F8CF73;
     font-weight: bold;
     cursor: pointer;
+    float: right;
 }
 .mutual-evaluate .zan-total{
     text-align: center;
@@ -257,7 +341,6 @@
 .interactive_watch .video{
     width: 520px;
     height: 265px;
-
     background: url(../../images/interactive/video.png);
     background-size: 100% 100%;
     float: left;
@@ -381,7 +464,6 @@
 /* 互动学习 */
 .interactive{
     position: relative;
-    width: 70%;
     margin:0 auto;
 }
 
@@ -483,6 +565,29 @@
     left: 400px;
     top: 72px;
 }
+.teacher-evaluate tr{
+    border-bottom: 2px dashed #2FACCD;
+}
+.teacher-evaluate th{
+    text-align: center;
+}
+.teacher-table{
+    margin-bottom: 30px;
+    border-collapse:separate; 
+    border-spacing:0px 20px;
+    margin-left: -60px;
+    text-align: center;
+}
+.write-now{
+    background: #F3B132;
+    border: 1px solid #F3B132;
+    border-radius: 15px;
+    color: #fff;
+    padding: 2px 11px;
+    font-size: 14px;
+}
+
+
 @media (max-width:1024px){
     .common-title{
         width: 170px!important;
@@ -590,12 +695,12 @@
         font-size: 20px;
     }
     .intera-nav{
-        top:195px;
+        top:20px;
         width: 130px;
         font-size: 18px;
     }
     .intera-question{
-        top: 250px;
+        top: 76px;
         width: 89%;
     }
     .intera-question li{
@@ -628,17 +733,15 @@
         left: 380px;
     }
     .pagination{
-        bottom: 25px;
+        bottom: 14px;
         left: 32%;
     }
     .teacher-evaluate .pagination{
         bottom: 23px;
     }
     .self-evaluate>.wrapper{
-        padding-top: 127px;
-        /*width: 900px;*/
+        padding-top: 90px;
         position: relative;
-        padding-bottom: 13px;
     }
     .self-evaluate .title{
         position: absolute;
@@ -649,55 +752,44 @@
         width: 100%;
         height: 25px;
     }
-    .self-evaluate-lists img{
-        width: 270px;
-        height: 192px;
-    }
-    .self-evaluate-lists>li{
-        margin: 0 40px 12px 0;
-    }
-    .self-evaluate-lists .cards-text li{
-        height: 23px;
-        line-height: 25px;
-    }
-    .self-evaluate-lists .cards-text li:nth-of-type(2){
-        margin-top: 34px;
-    }
-    .self-evaluate-lists .cards-text{
-        top: 40px;
-        width: 239px;
-    }
-    .self-evaluate-lists .list-title{
-        font-size: 20px;
-    }
     .self-evaluate .back{
         margin-bottom: -10px;
     }
     .my-wrapper{
-        padding-top: 130px;
+        padding-top: 90px;
     }
     .mutual-title{
-        width: 210px;
+        width: 100px;
         position: absolute;
     }
     .mutual-evaluate .avater-wrap img{
-        width: 68px;
+        width: 58px;
         cursor: pointer;
+        display: inline-block;
+        margin-right: 10px;
     }
     .mutual-evaluate .avater-wrap>span{
-        left: 250px;
+        left: 60px;
         font-size: 14px;
     }
+    .mutual-evaluate .text-wrap{
+        margin-top: 10px;
+        float: right;
+    }
     .mutual-evaluate .avater-wrap>span:nth-of-type(2){
-        left: 345px;
+        left: 205px;
     }
     .mutual-evaluate .avater-wrap>span:nth-of-type(3){
-        left: 440px;
+        left: 352px;
     }
     .mutual-cards{
-        margin-top: 20px;
-        width: 900px;
+        background: #fff;
+        width: 100%;
         height: 230px;
+        border-radius: 40px;
+        border: 4px solid #F3B132;
+        padding: 20px 30px;
+        position: relative;
     }
     .mutual-evaluate .blue-wrap{
         top: 263px;
@@ -740,10 +832,10 @@
         width: 180px;
     }
     .teacher-wrap{
-        height: 510px;
-        width: 100%;
-        margin-top: -30px;
+        width: 200px;
         float: left;
+        position: absolute;
+        left: 0;
     }
     .teacher-evaluate .lists{
         top: 200px;
