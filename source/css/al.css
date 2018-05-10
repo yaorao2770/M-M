@@ -925,7 +925,7 @@
 .interactive .title{
     width: 180px;
     position: absolute;
-    top: 105px;
+    /*top: 105px;*/
     left: 30px;
 }
 

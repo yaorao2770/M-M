@@ -47,11 +47,33 @@
 						}
 					})
 
+					.state('main.interactive_study_logs', {
+						url: '^/interactive_study_logs',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_study_logs.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
+
 					.state('main.interactive_study_detail', {
 						url: '^/interactive_study_detail',
 						views: {
 							'content@main': {
 								templateUrl: 'templates/interactive_study_detail.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
+
+					.state('main.interactive_study_new', {
+						url: '^/interactive_study_new',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_study_new.html',
 								controller: 'interactiveCtrl'
 							}
 
@@ -92,7 +114,7 @@
 						}
 					})
 
-					//课程评价	--- 教师评价
+					//课程评价	--- 课程总表
 					.state('main.teacher_evaluate', {
 						url: '^/teacher_evaluate',
 						views: {
@@ -102,6 +124,8 @@
 							}
 						}
 					})
+
+					//  --- 教师评价
 					.state('main.teacher_evaluate_write', {
 						url: '^/teacher_evaluate_write',
 						views: {

@@ -39,12 +39,19 @@ app.controller('course_evaluateCtrl', ['$scope','$location',function($scope,$loc
 	  $scope.currentPage = pageNo;
 	};
 
-	$scope.teacherBack = function () {
+	$scope.returnBack = function () {
 		$location.path('/teacher_evaluate');
 	};
 
-	$scope.writeNow = function () {
-		$location.path('/teacher_evaluate_write');
+	$scope.writeNow = function (who) {
+		console.log(who);
+		if(who == 'self'){			// 自评
+			$location.path('/self_evaluate');
+		}else if (who == 'mutal') {	// 互评
+			$location.path('/mutual_evaluate');
+		}else{					// 师评
+			$location.path('/teacher_evaluate_write');
+		}
 	};
 
 	$scope.pageChanged = function() {

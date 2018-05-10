@@ -1,47 +1,60 @@
-<div class="mutual-evaluate evaluate h100">
-	<div class="my-wrapper">
-		<img ng-src="images/interactive/biaobi2.png" class="title common-title">
-		<span class="back inline-btn" ng-click="backInteractive()">返回</span>
-		<div class="cl"></div>
-		<div class="mutual-cards">
-			<span class="avater-wrap">
-				<span ng-repeat="item in [1,2,3]">
-					<img ng-src="{{imgUrlActive}}" ng-click="clickImg($index)" ng-show="curNum == $index">
-					<img ng-src="{{imgUrl}}" ng-click="clickImg($index)" ng-show="curNum != $index">
-					<span class="text-wrap">
-						<span>A组</span><br>
-						<span>黄小朋友</span>
-					</span>
-					<p class="cl"></p>
-				</span>
-				<div class="cl"></div>
-			</span>
-			<ul>
-				<li ng-repeat="item in [1,2,3]" class="logs">
-					<span class="bold">2018年3月13日&nbsp;&nbsp;&nbsp;&nbsp;今天，我们小组的仓鼠胃口似乎特别好……</span>
-					<span class="fr">
-						<i class="fa fa-thumbs-up thumbs"></i>
-						<span>6</span>
-					</span>
-				</li>
-			</ul>
-		</div>
-		<div class="footer">
-			<ul class="zan-log-wrap">
-				<img ng-src="images/interactive/jiangpai.png" class="jiangpai">
-				<span class="zan-title">我获得的点赞数</span>
-				<span class="get-more">查看更多</span>
-				<li ng-repeat="item in [1,2,3]" class="logs footer-li">
-					<span class="bold">
-						黄小朋友
-						<i class="fa fa-thumbs-up thumbs"></i>
-						赞了 &nbsp;&nbsp; 
-						"今天， 我们小组的……"
-					</span>
-					<span class="fr bold">2018-3-13</span>
-				</li>
-			</ul>
+<div class="evaluate interactive h100">
+		<div class="my-wrapper">
+			<img ng-src="images/interactive/biaobi2.png" class="title common-title">
+			<span class="back inline-btn my-back" ng-click="backInteractive()">返回</span>
 			<div class="cl"></div>
+			<div class="intera-content my-content">
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="最新更新">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>最新更新</span>
+				</div>
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="默认排序">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>默认排序</span>
+				</div>
+				<div class="intera-nav">
+					<img ng-src="images/interactive/interactive-bar.png" alt="精华">
+					<img ng-src="images/interactive/arrow-down.png" class="arrow">
+					<span>精华</span>
+				</div>
+				<div class="interactive-style-detail">
+					<span class="img-wrap">
+						<img ng-src="images/interactive/avater-yellow.png" class="inline">
+						<span>小朋友</span>
+					</span>
+					<div class="text-wrap">
+						<span class="text">仓鼠喂养大全，让你的仓鼠健康活泼，快来学习吧~</span>
+						<span class="fr">2018-5-9</span>
+						<p>北冥有鱼，其名为鲲。鲲之大，不知其几千里也；化而为鸟，其名为鹏。鹏之背，不知其几千里也；怒而飞，其翼若垂天之云。是鸟也，海运则将徙于南冥，——南冥者，天池也。《齐谐》者，志怪者也。</p>
+						<div class="data-icon">
+							<span class="icons">
+								<i class="fa fa-heart"></i>
+								<span>12</span>
+								<i class="fa fa-commenting"></i>
+								<span>13</span>
+								<i class="fa fa-thumbs-up"></i>
+								<span>14</span>
+							</span>
+						</div>
+						<ul class="words-wrap">
+							<li ng-repeat="item in words">
+								<p ng-bind="item.words"></p>
+								
+									<small class="small-time" ng-bind="item.time"></small>
+									<span class="reply" ng-click='reply()'>回复</span>
+									<p class="cl"></p>
+							</li>
+						</ul>
+						<div class="relative">
+							<textarea ng-model='word'></textarea>
+							<span class="inline-btn save-btn" ng-click=" saveWords(word)">提交</span>
+						</div>
+					</div>
+					<div class="cl"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
