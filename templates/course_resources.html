@@ -19,9 +19,17 @@
                     <!--<span ></span>-->
                 </li>
             </ul>
-        <div  class="resource_content" >
-            <div class="dis_main">
-                <ul>
+
+            <ul class="res_menu">
+
+                <li ng-repeat="item in res_menuList" ng-class="{active:isSelectmenu==$index}" class="hover"
+                    ng-click="selectMenu($index)">{{item}}</li>
+                
+
+            </ul>
+
+
+                <ul class="resource_content_ul">
                     <li ng-repeat="item in mainList track by $index">
                         <img ng-src={{item.img}} alt="" class="img-responsive" ng-click="resource_detail($index)"/>
                         <span>第{{$index+1}}课</span><br>
@@ -29,20 +37,10 @@
 
                     </li>
                 </ul>
-            </div>
 
-            <ul uib-pagination
-                class="pagination-sm resources_pagination"
-                total-items="totalItems"
-                items-per-page = "itemsPerPage"
-                num-pages="numPages"
-                force-ellipses="true"
-                ng-model="currentPage"
-                ng-change="changePage()"
-                max-size="maxSize"
-                previous-text="&lsaquo;"
-                next-text="&rsaquo;"></ul>
-        </div>
+
+
+
 
     </div>
 </div>

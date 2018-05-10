@@ -11,8 +11,8 @@
             </ul>
         </div>
         <div class="learn_right h100" >
-            <img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>
-            <span class="dis_word">测量仓鼠体重</span>
+            <!--<img ng-src="images/digitization_course/dongwubiaotikuang.png" alt="" class="head_img"/>-->
+            <!--<span class="dis_word">测量仓鼠体重</span>-->
 
             <div ng-if="isSelect==0" class="h100">
 
@@ -34,7 +34,7 @@
                 </div>
 
 
-                <div class="learn_con " >
+                <div class="learn_con" >
                     <div class="learn_con_left">
                         <img ng-src="images/digitization_course/xiangyixiang_img1.png" class="img-responsive h100" alt=""/>
                     </div>
@@ -58,7 +58,10 @@
                             </li>
                         </ul>
                     </div>
-
+                    <span class="span_xiang hover"  ui-sref="main.soon_learn_detail">
+                        <img src="images/digitization_course/jilu.png" alt="" class="link_img"/>
+                        将物体名称与对应的重量及工具连线
+                    </span>
                 </div>
 
                 <div ng-include="'template.html'" class="learn_con_bottom"></div>
@@ -74,7 +77,13 @@
 
                 <div class="learn_con " >
                     <img src="images/digitization_course/chayihcha.png" class="w100 h100" alt=""/>
-                    <span class="span_cha">
+                    <img src="images/digitization_course/lianjie.png" alt="" class="img_cha1"
+                         ui-sref="main.course_resources_detail({id:0})"/>
+                    <img src="images/digitization_course/lianjie.png" alt="" class="img_cha2"
+                         ui-sref="main.course_resources_detail({id:0})"/>
+                    <span class="span_cha hover">
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
                         1.动物园怎么测量不同动物的体重？记录其中三种办法
                     </span>
                 </div>
@@ -93,7 +102,9 @@
 
                 <div class="learn_con " >
                     <img src="images/digitization_course/yiyiyi.png" class="w100 h100" alt=""/>
-                    <span class="span_yi">
+                    <span class="span_yi hover">
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
                         1.设计仓鼠体重测量方案
                     </span>
                 </div>
@@ -113,6 +124,14 @@
                     <video src="images/digitization_course/xueyixue.mp4" width="100%" height="100%" controls="controls">
                         Your browser does not support the video tag.
                     </video>
+
+
+                     <span class="span_xue hover">
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
+                        给测量仓鼠体重是的操作的步骤。
+                    </span>
+
                 </div>
 
                 <div ng-include="'template.html'" class="learn_con_bottom"></div>
@@ -131,12 +150,18 @@
 
                 <ul class="span_ce">
                     <li>
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
                         1.记录分工情况
                     </li>
                     <li>
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
                         2.记录测量过程。
                     </li>
                     <li>
+                        <img src="images/digitization_course/jilu.png" class="link_img" alt=""
+                             ui-sref="main.soon_learn_detail"/>
                         3.记录测量结果。
                     </li>
                 </ul>
@@ -179,18 +204,6 @@
         </div>
 
 
-
-
-
-
-
-
-
-        <div class="learn_img " ng-if="isSelect==9">
-            <img ng-src="images/digitization_course/pingyiping.png"  class="w100 h100" alt=""/>
-            <div ng-include="'template.html'"></div>
-
-        </div>
 
     </div>
 
