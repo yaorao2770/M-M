@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="al.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="al.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/css/al.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25171232">
-              <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="258" column="13" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -93,16 +93,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="worksheets.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/worksheets.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.269231">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="worksheets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/controller/worksheets.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,11 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soon_learn_detailCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/controller/soon_learn_detailCtrl.js">
+      <file leaf-file-name="cy.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/css/cy.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.494863">
+              <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactive_study.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/interactive_study.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="93" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -166,7 +166,6 @@
         <option value="$PROJECT_DIR$/templates/worksheets.html" />
         <option value="$PROJECT_DIR$/source/controller/course_resources.js" />
         <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/source/css/cy.css" />
         <option value="$PROJECT_DIR$/source/service/router.js" />
         <option value="$PROJECT_DIR$/source/controller/soon_learn_detailCtrl.js" />
         <option value="$PROJECT_DIR$/source/controller/worksheets.js" />
@@ -176,6 +175,7 @@
         <option value="$PROJECT_DIR$/templates/course_resources_detail.html" />
         <option value="$PROJECT_DIR$/source/controller/course_resources_detailCtrl.js" />
         <option value="$PROJECT_DIR$/source/css/al.css" />
+        <option value="$PROJECT_DIR$/source/css/cy.css" />
       </list>
     </option>
   </component>
@@ -733,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/interactive_study.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
@@ -758,14 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="1" column="63" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/css/cy.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="893" column="19" selection-start-line="893" selection-start-column="19" selection-end-line="893" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -862,10 +846,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/interactive_study.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="93" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/css/al.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25171232">
-          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="258" column="13" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/css/cy.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.494863">
+          <caret line="156" column="1" selection-start-line="156" selection-start-column="1" selection-end-line="156" selection-end-column="1" />
           <folding />
         </state>
       </provider>
