@@ -46,6 +46,7 @@ app.controller('interactiveCtrl', ['$scope','$location',function($scope,$locatio
 
 	// 提交留言
 	$scope.saveWords = function(word){
+		$scope.word = '';
 		$scope.words.push({
 			words: word,
 			time: '刚刚'
