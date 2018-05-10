@@ -230,7 +230,7 @@
 					//学习详情
 					//马上学习
 					.state('main.soon_learn_detail', {
-						url: '^/soon_learn_detail',
+						url: '^/soon_learn_detail/:id/:type',
 						views: {
 							'content@main': {
 								templateUrl: 'templates/soon_learn_detail.html',

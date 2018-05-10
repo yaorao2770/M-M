@@ -978,6 +978,7 @@
     border-bottom:2px solid #fff;
 }
 .sheet-content{
+    margin-top: 3%;
     border: 8px solid #97C83E;
     background: #fff;
     border-radius: 40px;
