@@ -14,15 +14,14 @@
 				<tr ng-repeat="item in entrys">
 					<td>第{{$index+1}}课时测量仓鼠的体重</td>
 					<td ng-show="item.self">{{item.self}}</td>
-					<td ng-show="item.mutal">{{item.mutal}}</td>
-					<td ng-show="item.teacher">{{item.teacher}}</td>
-
 					<td ng-show="!item.self">
 						<button class="write-now" ng-click="writeNow('self')">马上评价</button>
 					</td>
+					<td ng-show="item.mutal">{{item.mutal}}</td>
 					<td ng-show="!item.mutal">
 						<button class="write-now" ng-click="writeNow('mutal')">马上评价</button>
 					</td>
+					<td ng-show="item.teacher">{{item.teacher}}</td>
 					<td ng-show="!item.teacher">
 						<button class="write-now" ng-click="writeNow('teacher')">马上评价</button>
 					</td>

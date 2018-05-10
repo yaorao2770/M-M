@@ -45,6 +45,9 @@
             课程评价
             <div ng-show="showMenu" class="course_list ">
                 <ul class="evaluation-subMenu">
+                    <li ui-sref="main.teacher_evaluate" ng-click="num=10;type=4">
+                        <span class="{{num==10?'active':''}}" >课程总表</span>
+                    </li>
                     <li ui-sref="main.self_evaluate" ng-click="num=7;type=4">
                         <span  class="{{num==7?'active':''}}">自评</span>
                     </li>
@@ -53,9 +56,6 @@
                     </li>
                     <li ui-sref="main.teacher_evaluate_write" ng-click="num=9;type=4">
                         <span class="{{num==9?'active':''}}" >教师评价</span>
-                    </li>
-                    <li ui-sref="main.teacher_evaluate" ng-click="num=10;type=4">
-                        <span class="{{num==10?'active':''}}" >课程总表</span>
                     </li>
                 </ul>
             </div>

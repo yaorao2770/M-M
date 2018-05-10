@@ -29,7 +29,7 @@
     top: 108px;
 }
 .interactive .my-content{
-    margin-top: 29px;
+    margin-top: 25px;
 }
 .intera-content{
     width: 100%;
@@ -67,9 +67,9 @@
     margin-bottom: -10px;
 }
 .interactive .review{
-    width: 200px;
+    width: 225px;
     left: 350px;
-    top: 120px;
+    top: 109px;
     cursor: pointer;
     position: absolute;
 }
@@ -468,6 +468,7 @@
 .interactive_watch .video-btn{
     color: #fff;
     text-align: center;
+    margin-top: -30px;
 }
 .interactive_watch .color-pot:nth-of-type(1){
     margin-top: 30px;
@@ -501,16 +502,16 @@
 }
 .interactive_watch .wrap-house{
     float: left;
-    width: 32%;
-    /*width: 324px;*/
+    width: 40%;
     height: 198px;
-    background: url(../../images/interactive/wrap-house.png);
-    background-size: 100% 100%;
-    margin-top: -38px;
-    padding-top: 70px;
+    background: #F5CA77;
+    border: 2px solid #F2B030;
+    margin-top: -32px;
+    padding-top: 20px;
     padding-left: 20px;
     color: #fff;
     position: relative;
+    border-radius: 29px;
 }
 .intera-footer-save-btn{
     border-radius: 20px;
@@ -1112,4 +1113,11 @@ input,button,select,textarea{outline:none}
     line-height: 60px;
     background: #eee;
     border-top: 1px solid #ccc;
+}
+
+.cy .intera-content{
+    margin-top: 61px;
+}
+.interactive_watch .my-wrapper{
+    padding-top: 134px;
 }
