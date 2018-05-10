@@ -279,6 +279,11 @@
     float: left;
     width: 100%;
     height: 290px;
+    background: #fff;
+    border-radius: 40px;
+    border: 4px solid #F3B132;
+    padding: 20px 30px;
+    position: relative;
 }
 .mutual-cards ul{
     margin-top: 70px;
@@ -947,6 +952,7 @@
     }
 }
 
+
 .course_list .evaluation-subMenu{
     background: #35B1D1;
     border-color: #fff;
@@ -1121,4 +1127,122 @@ input,button,select,textarea{outline:none}
 }
 .interactive_watch .my-wrapper{
     padding-top: 134px;
+}
+
+@media (min-width:1600px){
+    .intera-content{
+        height: 800px;
+        min-height: 820px;
+        margin-top: 60px!important;
+    }
+    .cy .intera-content{
+        margin-top: 87px!important;
+    }
+    .interactive .review{
+        top: 143px;
+    }
+    .evaluate .card{
+        top: 138px;
+    }
+    .intera-nav{
+        top:50px;
+    }
+    .intera-question{
+        top: 150px;
+    }
+    .interactive-style-detail{
+        margin-top: 95px;
+    }
+    .mutual-evaluate .my-teacher{
+        float: left;
+        width: 220px;
+    }
+    .mutual-title{
+        width: 160px;
+    }
+    .mutual-evaluate .back{
+        margin-top: 38px;
+    }
+    .subtitle-parent{
+        margin-top: 28px;
+    }
+    .mutual-container input, .mutual-container textarea{
+        width: 100%;
+    }
+    .my .self-evaluate-lists{
+        margin-top: 17px;
+        height: 800px;
+    }
+    .teacher-table{
+        border-spacing: 0px 30px;
+    }
+    .mutual-container{
+        margin-top: 10px;
+        min-height: 800px;
+    }
+    .self-evaluate .title{
+        float: left;
+    }
+    .self-evaluate-lists{
+        margin-top: 10px;
+        height: 800px;
+    }
+    .self-evaluate-lists .q{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        margin-top: 15px;
+    }
+    .interactive_watch .video{
+        width: 600px;
+        height: 323px;
+    }
+    .interactive_watch .canlendar{
+        width: 381px;
+        height: 314px;
+    }
+    .interactive_watch .footer{
+        height: 422px;
+        padding: 35px;
+        padding-left: 51px;
+        margin-top: 30px;
+    }
+    .intera-footer-title{
+        margin-bottom: 20px;
+    }
+    .intera-footer-li{
+        height: 40px;
+        line-height: 40px;
+    }
+    .intera-footer-scroller{
+        height: 300px;
+    }
+    .interactive_watch .wrap-house{
+        height: 308px;
+    }
+    .interactive_watch .my-wrapper{
+        padding-top: 200px;
+    }
+    .interactive_watch .title{
+        top:123px;
+    }
+    .mutual-cards{
+        height: 390px;
+        margin-bottom: 30px;
+    }
+    .mutual-cards ul{
+        margin-top: 165px;
+    }
+    .mutual-evaluate .avater-wrap>span{
+        left: 67px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(2){
+        left: 210px;
+    }
+    .mutual-evaluate .avater-wrap>span:nth-of-type(3){
+        left: 350px;
+    }
+    .mutual-evaluate .logs{
+        height: 42px;
+        line-height: 42px;
+    }
 }
