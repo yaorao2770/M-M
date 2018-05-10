@@ -47,11 +47,33 @@
 						}
 					})
 
+					.state('main.interactive_study_logs', {
+						url: '^/interactive_study_logs',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_study_logs.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
+
 					.state('main.interactive_study_detail', {
 						url: '^/interactive_study_detail',
 						views: {
 							'content@main': {
 								templateUrl: 'templates/interactive_study_detail.html',
+								controller: 'interactiveCtrl'
+							}
+
+						}
+					})
+
+					.state('main.interactive_study_new', {
+						url: '^/interactive_study_new',
+						views: {
+							'content@main': {
+								templateUrl: 'templates/interactive_study_new.html',
 								controller: 'interactiveCtrl'
 							}
 

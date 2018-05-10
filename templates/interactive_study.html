@@ -1,8 +1,8 @@
 <div class="evaluate interactive h100">
 		<div class="my-wrapper">
 			<img ng-src="images/interactive/biaobi2.png" class="title common-title">
-			<img ng-src="images/interactive/review.png" class="review" ng-click="evaluateDetail()">
-			<span class="inline-btn card">我要发帖</span>
+			<img ng-src="images/interactive/review.png" class="review" ng-click="evaluateLogs()">
+			<span class="inline-btn card" ng-click="newCard()">我要发帖</span>
 			<div class="cl"></div>
 			<div class="intera-content">
 				<div class="intera-nav">
@@ -21,7 +21,8 @@
 					<span>精华</span>
 				</div>
 				<ul class="intera-question">
-					<li ng-repeat="item in [1,2,3]">
+					<li ng-repeat="item in [1,2,3]" 
+						ng-click="evaluateDetail()">
 						<span class="img-wrap">
 							<img ng-src="images/interactive/avater-yellow.png">
 							<span>小朋友</span>
