@@ -93,6 +93,9 @@
     cursor: pointer;
     line-height: 24px;
 }
+.mutual-evaluate .my-teacher{
+    width: 160px;
+}
 .FACCD{
     color: #2FACCD;
 }
@@ -103,6 +106,9 @@
     border: 4px solid #2FACCD;
     border-radius: 15px;
     padding: 20px;
+}
+.my .self-evaluate-lists{
+    margin-top: 61px;
 }
 .mutual-container{
     margin-top: 26px;

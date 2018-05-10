@@ -114,7 +114,7 @@
 						}
 					})
 
-					//课程评价	--- 教师评价
+					//课程评价	--- 课程总表
 					.state('main.teacher_evaluate', {
 						url: '^/teacher_evaluate',
 						views: {
@@ -124,6 +124,8 @@
 							}
 						}
 					})
+
+					//  --- 教师评价
 					.state('main.teacher_evaluate_write', {
 						url: '^/teacher_evaluate_write',
 						views: {

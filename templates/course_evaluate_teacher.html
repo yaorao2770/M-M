@@ -1,4 +1,4 @@
-<div class="teacher-evaluate evaluate h100">
+<div class="teacher-evaluate evaluate my h100">
 	<div class="my-wrapper">
 		<img ng-src="images/evaluate/class-total.png" class="teacher-wrap">
 		<div class="cl"></div>
@@ -18,13 +18,13 @@
 					<td ng-show="item.teacher">{{item.teacher}}</td>
 
 					<td ng-show="!item.self">
-						<button class="write-now" ng-click="writeNow()">马上评价</button>
+						<button class="write-now" ng-click="writeNow('self')">马上评价</button>
 					</td>
 					<td ng-show="!item.mutal">
-						<button class="write-now" ng-click="writeNow()">马上评价</button>
+						<button class="write-now" ng-click="writeNow('mutal')">马上评价</button>
 					</td>
 					<td ng-show="!item.teacher">
-						<button class="write-now" ng-click="writeNow()">马上评价</button>
+						<button class="write-now" ng-click="writeNow('teacher')">马上评价</button>
 					</td>
 					<td>{{item.total}}</td>
 				</tr>
