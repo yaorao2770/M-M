@@ -114,9 +114,8 @@ app.controller('worksheetsCtrl', ['$scope','$state','$location',function($scope,
 
     };
 
-
     $scope.goLearning=function(){
-        $state.go('main.soon_learn_detail')
+        $state.go('main.soon_learn_detail',{id:0,type:0})
     }
 
 }]);

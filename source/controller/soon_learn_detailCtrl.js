@@ -1,13 +1,48 @@
 /**
  * Created by Administrator on 2018/4/27.
  */
-app.controller('soon_learn_detailCtrl', ['$scope','$state','$location',function($scope,$state,$location){
+app.controller('soon_learn_detailCtrl', ['$scope','$state','$location','$stateParams',
+    function($scope,$state,$location,$stateParams){
 
-    $scope.courseNum=1;
+    console.log($stateParams);
+
+
+
     $scope.name='测量仓鼠体重';
     $scope.menulist=['作业一','作业2'];
-    $scope.isSelect=0;
-    test();
+    //$scope.isSelect=0;
+
+    switch ($stateParams.type){
+        case '0':
+            $scope.isSelect=0;
+            test();
+            break;
+        case '1':
+            $scope.isSelect=0;
+            $scope.course10 = false;
+            $scope.course11 = true;
+            $scope.course20 = false;
+            $scope.course21 = false;
+            break;
+        case '2':
+            $scope.isSelect=1;
+            $scope.course10 = false;
+            $scope.course11 = false;
+            $scope.course20 = true;
+            $scope.course21 = false;
+            break
+        case '3':
+            $scope.isSelect=1;
+            $scope.course10 = false;
+            $scope.course11 = false;
+            $scope.course20 = false;
+            $scope.course21 = true;
+            break;
+    }
+
+
+
+
 
     function test(){
       $scope.course10 = true;
@@ -30,8 +65,6 @@ app.controller('soon_learn_detailCtrl', ['$scope','$state','$location',function(
 
     // 下一页
     $scope.nextPage = function(){
-
-        console.log($scope.isSelect);
 
         switch ($scope.isSelect){
             case 0:

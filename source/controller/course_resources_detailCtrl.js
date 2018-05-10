@@ -3,13 +3,7 @@
  */
 app.controller('course_resources_detailCtrl', ['$scope','$stateParams',function($scope,$stateParams){
 
-    $scope.data='��Դ����';
-
-    console.log($stateParams.id);
-
     switch ($stateParams.id){
-
-
         case '0':
             $scope.title='动物称体重';
             $scope.select=0;

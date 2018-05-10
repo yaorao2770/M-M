@@ -5,10 +5,13 @@ app.controller('soon_learnCtrl', ['$scope',function($scope){
     $scope.data='马上学习';
 
     $scope.learn_left=['首页','想一想','查一查','议一议','学一学','测一测','讲一讲','评一评'];
-    $scope.isSelect=0;
+
+    sessionStorage.select?$scope.isSelect=sessionStorage.select:$scope.isSelect=0;
 
     $scope.selectType=function(index){
         $scope.isSelect=index;
+
+        sessionStorage.select=index;
     }
 
     $scope.imgList=[
